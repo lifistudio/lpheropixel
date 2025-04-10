@@ -36,7 +36,7 @@ const portfolioItems = [
     date: "July 2019",
     image: "assets/img/4bit_craft.jpeg",
     description:
-      "Take a look at the projects of HeroPixels. Click on the respective picture to get information about the project.",
+      "Turn your Minecraft into a super cute game! Everything seems tiny: every block, every mob, every tree.",
     builders:
       "affe481 - koin1 - BigKingHD - Chonike - FlyingZera - hackerpotter - M1ller_ - sebsy - VyseHD - WoIstMeineSocke - Youseles",
   },
@@ -63,7 +63,7 @@ const portfolioItems = [
     title: "Pastel Paradise",
     date: "July 2019",
     image: "assets/img/pastelparadise.jpg",
-    description: "Another description for Western World project.",
+    description: "Another description for any project.",
     builders: "Builder list goes here",
   },
   {
@@ -71,7 +71,7 @@ const portfolioItems = [
     title: "Zombie Bunker",
     date: "July 2019",
     image: "assets/img/zombie_bunker.jpg",
-    description: "Another description for Western World project.",
+    description: "Another description for any project.",
     builders: "Builder list goes here",
   },
   {
@@ -79,7 +79,7 @@ const portfolioItems = [
     title: "More Creepers",
     date: "July 2019",
     image: "assets/img/more_creepers.jpg",
-    description: "Another description for Western World project.",
+    description: "Another description for any project.",
     builders: "Builder list goes here",
   },
 ];
@@ -89,7 +89,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const modal = document.getElementById("portfolio-modal");
   const modalContent = document.getElementById("modal-content");
 
-  // Generate portfolio items
   portfolioItems.forEach((item) => {
     const portfolioItem = document.createElement("div");
     portfolioItem.className = "flex justify-center";
@@ -107,7 +106,6 @@ document.addEventListener("DOMContentLoaded", function () {
     portfolioContainer.appendChild(portfolioItem);
   });
 
-  // Handle modal content when portfolio item is clicked
   document.querySelectorAll(".portfolio-item").forEach((button) => {
     button.addEventListener("click", function () {
       const itemId = parseInt(this.getAttribute("data-id"));
@@ -125,3 +123,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+
+
