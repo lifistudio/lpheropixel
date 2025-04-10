@@ -1,0 +1,278 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+
+    <!-- Remixicon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" />
+
+    <!-- Flowbite -->
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="navbar" class="fixed w-full top-0 left-0 z-50">
+        <nav class="container flex items-center justify-between h-16 py-5 sm:h-20">
+            <div class="">
+                <img src="assets/img/logo.png" alt="" class="w-14">
+            </div>
+
+            <div id="nav-menu"
+                class="absolute font-Pixelify top-0 left-[-100%] min-h-[100vh] w-full bg-black/90 backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit lg:w-auto lg:backdrop-blur-none lg:bg-transparent lg:h-20">
+                <ul class="flex flex-col items-center gap-8 lg:flex-row">
+                    <li>
+                        <a href="#about" class="nav-link active">About</a>
+                    </li>
+                    <li>
+                        <a href="#portofolio" class="nav-link">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#how" class="nav-link">How it Works</a>
+                    </li>
+                    <li>
+                        <a href="#formApp" class="nav-link">
+                            <span
+                                class="bg-[#379600] hover:bg-[#3b6b1f] px-12 py-4 apply-button text-[20px] shadow-custom duration-300 lg:py-3 lg:px-7 lg:text-base">Apply
+                                Now</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="text-xl sm:text-3xl cursor-pointer z-50 lg:hidden">
+                <i class="ri-menu-line" id="hamburger"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home -->
+        <section id="home" class=" bg-hero min-h-[500px] bg-center bg-cover backdrop-blur-md lg:min-h-[100vh] z-30 justify-content-center">
+            <div class="container h-[460px] flex flex-col gap-4 justify-center text-center items-center">
+                <h1 class="w-full md:w-[560px] lg:w-[960px] lg:text-5xl xl:text-7xl">Submit your
+                    minecraft projects-we'll bring to the marketplace</h1>
+                <p class="font-Poppins text-base font- lg:text-2xl">Official publisher. Simple process.
+                    Fair collaboration.</p>
+                <a href="#formApp" class="my-4">
+                    <span
+                        class="bg-[#379600] font-Pixelify px-12 py-4 apply-button text-[20px] shadow-custom duration-300 md:py-4 text-2xl font-extralight md:text-xl hover:bg-[#3b6b1f]">Apply
+                        Now</span>
+                </a>
+            </div>
+            <div class=" flex justify-self-center">
+                <img src="assets/img/down_arrow.svg " alt="downicon" class="animate-bounce ">
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="bg-[#000000] relative overflow-x-hidden">
+            <!-- Blob 2 -->
+            <div
+                class="circlePosition w-[800px] h-[380px] bg-[#1C4C00] rounded-full absolute -z-10 top-[30%] left-[40%] translate-x-[50%] blur-[200px]">
+
+            </div>
+            <div
+                class="circlePosition w-[800px] h-[380px] bg-[#1C4C00] rounded-full absolute -z-10 top-[10%] left-[40%] translate-x-[50%] blur-[200px]">
+
+            </div>
+            <div class="w-full lg:container">
+                <!-- blob 1 -->
+                <img src="assets/img/Ellipse 1.svg" alt="" class="w-96 absolute -z-10 -top-48 -left-12 opacity-80">
+                <div class="flex flex-col gap-8 items-center justify-center z-20">
+                    <div class="text-center lg:w-[70%]">
+                        <h1 class="mb-2 lg:text-4xl xl:text-5xl lg:mb-12 uppercase">About Heropixel Games</h1>
+                        <p class="text-[#A5A5A5] px-1">Heropixel Games is an official Minecraft Marketplace partner. We´ve already published over 50 projects worldwide and help creators bring their ideas to life professionally.</p>
+                    </div>
+                    <div class="w-[96%] px-6 py-8 bg-[#272727] rounded-md lg:w-[70%] lg:mt-6 lg:rounded-lg">
+                        <div class="flex flex-wrap gap-4 items-center justify-center lg:gap-8">
+                            <div class="flex items-center gap-[2px] lg:gap-1">
+                                <i class="ri-checkbox-fill text-[#379600] text-lg lg:text-2xl"></i>
+                                <p class="text-[14px] lg:text-lg">Verified Partner</p>
+                            </div>
+                            <div class="flex items-center gap-[2px] lg:gap-1">
+                                <i class="ri-checkbox-fill text-[#379600] text-lg lg:text-2xl"></i>
+                                <p class="text-[14px] lg:text-lg">Experience & Quality</p>
+                            </div>
+                            <div class="flex items-center gap-[2px] lg:gap-1">
+                                <i class="ri-checkbox-fill text-[#379600] text-lg lg:text-2xl"></i>
+                                <p class="text-[14px] lg:text-lg">Fair Upfront Payments</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- How it works -->
+            <div class="py-20" id="how">
+                <div class="w-full lg:container px-5">
+                    <div class="flex flex-col gap-8 items-center justify-center">
+                        <h1 class="mb-2 lg:text-4xl xl:text-5xl lg:mb-12">HOW IT WORKS</h1>
+                        <div
+                            class="w-full text-center mx-2 lg:mx-0 px-6 py-12 lg:px-20 lg:py-14 lg:w-[55%] rounded-lg border border-[#184100] bg-hero-green bg-opacity-70 text-white shadow-md shadow-green-900/30 mb-8">
+                            <p class="text-white text-xl mb-2">1. Submit</p>
+                            <p class="text-[#A5A5A5]">Fill out the form and share your idea with us.</p>
+                        </div>
+                        <div
+                            class="w-full text-center mx-2 lg:mx-0 px-6 py-12 lg:px-20 lg:py-14 lg:w-[55%] rounded-lg border border-[#184100] bg-hero-green bg-opacity-70 text-white shadow-md shadow-green-900/30 mb-8">
+                            <p class="text-white text-xl mb-2">2. Review & Feedback</p>
+                            <p class="text-[#A5A5A5]">We review your project and give honest feedback. </p>
+                        </div>
+                        <div
+                            class="w-full text-center mx-2 lg:mx-0 px-6 py-12 lg:px-20 lg:py-14 lg:w-[55%] rounded-lg border border-[#184100] bg-hero-green bg-opacity-70 text-white shadow-md shadow-green-900/30 mb-8">
+                            <p class="text-white text-xl mb-2">3. Publish Together</p>
+                            <p class="text-[#A5A5A5]">We'll help you publish it on the Minecraft Marketplace, officially. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portofolio -->
+        <section id="portofolio" class="bg-[#181818]">
+            <div class="w-full flex flex-col items-center justify-center lg:container">
+                <div class="text-center lg:w-[70%] mb-16">
+                    <h1 class="mb-2 lg:text-4xl xl:text-5xl lg:mb-8">PORTOFOLIO</h1>
+                    <p class="text-[#A5A5A5] px-2">Take a look at the projects of HeroPixel Games. Click on the respective
+                        picture to get information about the project.</p>
+                </div>
+                <div class="grid grid-cols-1 gap-8 items-center justify-center lg:grid-cols-3" id="portfolio-container">
+                    <!-- Portfolio items will be inserted here by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal Structure (hanya satu modal yang akan digunakan untuk semua item) -->
+        <div id="portfolio-modal" tabindex="-1" aria-hidden="true"
+            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+            <div class="relative p-4 w-full max-w-2xl max-h-full">
+                <div class="relative bg-[#1F1F1F] rounded-lg shadow-sm">
+                    <div class="flex items-center justify-between p-4 md:p-5">
+                        <button type="button"
+                            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center"
+                            data-modal-hide="portfolio-modal">
+                            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 14 14">
+                                <path stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2"
+                                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                            </svg>
+                            <span class="sr-only">Close modal</span>
+                        </button>
+                    </div>
+                    <div class="flex flex-col items-center justify-center p-4 md:p-5" id="modal-content">
+                        <!-- Modal content will be inserted here by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Form -->
+        <section id="formApp" class="bg-[#000000] relative">
+            <!-- Vector 1 -->
+            <img src="assets/img/Vector 1.svg" alt="" class="absolute -z-20 -top-10 h-3/4">
+            <!-- Vector 2 -->
+            <img src="assets/img/Vector 2.svg" alt="" class="absolute h-1/2 -z-30 -bottom-20">
+            <div class="w-full lg:container pb-28 lg:pb-32">
+                <div class="flex flex-col items-center">
+                    <div class="text-center mb-10">
+                        <h1 class="lg:text-4xl xl:text-5xl">APPLICATION FORM</h1>
+                    </div>
+                    <div class="w-[90%] bg-[#1F1F1F] px-4 py-8 rounded-lg lg:w-[80%]">
+                        <form  id="contact-form"
+                            class="max-w-sm mx-auto flex flex-col lg:max-w-[96%]">
+                            <div class="mb-5">
+                                <input type="text" name="name" id="text"
+                                    class="bg-[#282828] placeholder-[#A5A5A5] text-slate-100 text-sm rounded-lg focus:ring-[#282828] focus:border-[#282828] block w-full px-2.5 py-4"
+                                    placeholder="Name/Team Name" required />
+                            </div>
+                            <div class="mb-5">
+                                <input type="email" name="email" id="email"
+                                    class="bg-[#282828] placeholder-[#A5A5A5] text-slate-100 text-sm rounded-lg focus:ring-[#282828] focus:border-[#282828] block w-full px-2.5 py-4"
+                                    placeholder="Contact Email" required />
+                            </div>
+                            <div class="mb-5">
+                                <textarea name="description" id="description"
+                                          class="bg-[#282828] placeholder-[#A5A5A5] text-slate-100 text-sm rounded-lg focus:ring-[#282828] focus:border-[#282828] block w-full px-2.5 py-2 min-h-[200px]"
+                                          placeholder="Short Project Description" required></textarea>
+                              </div>
+                            <div class="flex items-start mb-5">
+                                <div class="flex items-center h-5">
+                                    <input id="remember" type="checkbox" value=""
+                                        class="w-4 h-4 text-green-600 border border-gray-300 rounded-sm bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
+                                        required />
+                                </div>
+                                <label for="remember" class="ms-2 font-Poppins text-sm font-extralight">I
+                                    agree to my data being stored for communication purposes.
+                                </label>
+                            </div>
+                            <button type="submit"
+                                class="bg-[#379600] hover:bg-[#3b6b1f] w-[70%] lg:w-[30%] px-8 py-4 apply-button text-base font-Pixelify shadow-custom duration-300 mx-auto my-8">Submit
+                                Project</button>
+                        </form>
+                        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+                        <script>
+                        (function(){
+                            emailjs.init("jHb_uzK3TCNFFJ_rR"); 
+                        })();
+
+                        document.getElementById('contact-form').addEventListener('submit', function(e) {
+                            e.preventDefault();
+
+                            emailjs.sendForm('service_w442wrb', 'template_khvzwcj', this)
+                            .then(function() {
+                                alert('✅ Message sent successfully!');
+                                document.getElementById('contact-form').reset(); 
+                            }, function(error) {
+                                console.error('EmailJS Error:', error); 
+                                alert('Failed to send message: ' + JSON.stringify(error));
+                            });
+                        });
+                        </script>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-[#000000] pb-10 lg:py-10">
+        <div class="w-full flex flex-col items-center pt-3">
+            <p class="font-extralight text-[#A5A5A5]">Email: info@heropixel.games</p>
+            <div class="flex items-center justify-center gap-4 my-6">
+                <a href="">
+                    <i class="ri-twitter-x-line text-3xl lg:text-4xl"></i>
+                </a>
+                <a href="">
+                    <i class="ri-tiktok-fill text-4xl lg:text-5xl"></i>
+                </a>
+                <a href="">
+                    <i class="ri-discord-fill text-4xl lg:text-5xl"></i>
+                </a>
+                <a href="">
+                    <i class="ri-instagram-line text-4xl lg:text-5xl"></i>
+                </a>
+                <a href="">
+                    <i class="ri-facebook-circle-fill text-4xl lg:text-5xl"></i>
+                </a>
+            </div>
+            <div class="border-b-[0.5px] w-full border-[#484848] mt-2"></div>
+            <p class="text-[10px] lg:text-base font-extralight text-[#A5A5A5] text-center mt-4">Copyright ©
+                HeroPixels.org 2025. <span class="text-[#379600]">Privacy Policy. Imprint</span></p>
+        </div>
+    </footer>
+
+    <!-- Main Js -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- Flowbite -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+</body>
+
+</html>
