@@ -1081,6 +1081,18 @@ video {
   max-width: 24rem;
 }
 
+.max-w-xl{
+  max-width: 36rem;
+}
+
+.max-w-4xl{
+  max-width: 56rem;
+}
+
+.max-w-3xl{
+  max-width: 48rem;
+}
+
 .flex-shrink{
   flex-shrink: 1;
 }
@@ -2316,8 +2328,28 @@ video {
   padding: 0.5rem;
 }
 
+.p-20{
+  padding: 5rem;
+}
+
 .p-4{
   padding: 1rem;
+}
+
+.p-10{
+  padding: 2.5rem;
+}
+
+.p-9{
+  padding: 2.25rem;
+}
+
+.p-6{
+  padding: 1.5rem;
+}
+
+.p-5{
+  padding: 1.25rem;
 }
 
 .px-1{
@@ -3297,8 +3329,24 @@ p{
     width: 560px;
   }
 
+  .md\:p-20{
+    padding: 5rem;
+  }
+
   .md\:p-5{
     padding: 1.25rem;
+  }
+
+  .md\:p-1{
+    padding: 0.25rem;
+  }
+
+  .md\:p-14{
+    padding: 3.5rem;
+  }
+
+  .md\:p-16{
+    padding: 4rem;
   }
 
   .md\:py-4{

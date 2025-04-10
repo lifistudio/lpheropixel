@@ -79,7 +79,7 @@ const portfolioItems = [
     title: "More Creepers",
     date: "July 2019",
     image: "assets/img/more_creepers.jpg",
-    description: "Another description for any project.",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione harum expedita obcaecati? Beatae, quam laudantium!.",
     builders: "Builder list goes here",
   },
 ];
@@ -113,11 +113,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (item) {
         modalContent.innerHTML = `
-            <h1>${item.title}</h1>
-            <p class="text-xs text-[#A5A5A5] mb-6">${item.date}</p>
-            <img src="${item.image}" alt="" class="w-[95%] h-[60%] mb-5 rounded-sm">
-            <p class="text-xs text-[#A5A5A5] mb-6">${item.description}</p>
-            <p class="text-xs text-[#A5A5A5] mb-6">Builder: ${item.builders}</p>
+            <h1 class="text-center">${item.title}</h1>
+            <p class="text-xs text-center text-[#A5A5A5] mb-6">${item.date}</p>
+            <img src="${item.image}" alt="" class="w-full mb-5 rounded-sm">
+            <p class="text-sm text-start text-[#A5A5A5] mb-6">${item.description}</p>
+            <p class="text-sm text-[#A5A5A5] mb-6">Builder: ${item.builders}</p>
           `;
       }
     });
