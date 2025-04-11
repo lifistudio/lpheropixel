@@ -1073,8 +1073,20 @@ video {
   width: 100%;
 }
 
-.max-w-2xl{
-  max-width: 42rem;
+.w-5{
+  width: 1.25rem;
+}
+
+.w-1{
+  width: 0.25rem;
+}
+
+.w-12{
+  width: 3rem;
+}
+
+.max-w-3xl{
+  max-width: 48rem;
 }
 
 .max-w-sm{
@@ -1083,14 +1095,6 @@ video {
 
 .max-w-xl{
   max-width: 36rem;
-}
-
-.max-w-4xl{
-  max-width: 56rem;
-}
-
-.max-w-3xl{
-  max-width: 48rem;
 }
 
 .flex-shrink{
@@ -2190,6 +2194,11 @@ video {
   background-color: transparent;
 }
 
+.bg-red-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 113 113 / var(--tw-bg-opacity, 1));
+}
+
 .bg-opacity-70{
   --tw-bg-opacity: 0.7;
 }
@@ -2328,24 +2337,8 @@ video {
   padding: 0.5rem;
 }
 
-.p-20{
-  padding: 5rem;
-}
-
 .p-4{
   padding: 1rem;
-}
-
-.p-10{
-  padding: 2.5rem;
-}
-
-.p-9{
-  padding: 2.25rem;
-}
-
-.p-6{
-  padding: 1.5rem;
 }
 
 .p-5{
@@ -3035,8 +3028,32 @@ video {
   transition-duration: 150ms;
 }
 
+.transition-all{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-colors{
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .duration-300{
   transition-duration: 300ms;
+}
+
+.duration-75{
+  transition-duration: 75ms;
+}
+
+.duration-500{
+  transition-duration: 500ms;
+}
+
+.duration-700{
+  transition-duration: 700ms;
 }
 
 .ease-in{
@@ -3259,6 +3276,40 @@ p{
   background-color: rgb(229 231 235 / var(--tw-bg-opacity, 1));
 }
 
+.hover\:bg-\[\]:hover{
+  background-color: ;
+}
+
+.hover\:bg-\[\#379600\]:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 150 0 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-\[\#213f10\]:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(33 63 16 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-\[\#334a26\]:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 74 38 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-\[\#aaf57e\]:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(170 245 126 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-\[\#76ee30\]:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(118 238 48 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-\[\#2a5212\]:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(42 82 18 / var(--tw-bg-opacity, 1));
+}
+
 .hover\:font-bold:hover{
   font-weight: 700;
 }
@@ -3329,24 +3380,12 @@ p{
     width: 560px;
   }
 
-  .md\:p-20{
-    padding: 5rem;
+  .md\:p-16{
+    padding: 4rem;
   }
 
   .md\:p-5{
     padding: 1.25rem;
-  }
-
-  .md\:p-1{
-    padding: 0.25rem;
-  }
-
-  .md\:p-14{
-    padding: 3.5rem;
-  }
-
-  .md\:p-16{
-    padding: 4rem;
   }
 
   .md\:py-4{

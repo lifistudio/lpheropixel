@@ -84,17 +84,60 @@ const portfolioItems = [
   },
 ];
 
+// document.addEventListener("DOMContentLoaded", function () {
+//   const portfolioContainer = document.getElementById("portfolio-container");
+//   const modal = document.getElementById("portfolio-modal");
+//   const modalContent = document.getElementById("modal-content");
+
+//   portfolioItems.forEach((item) => {
+//     const portfolioItem = document.createElement("div");
+//     portfolioItem.className = "flex justify-center";
+//     portfolioItem.innerHTML = `
+        // <button data-modal-target="portfolio-modal" data-modal-toggle="portfolio-modal"
+        //   class="block text-white bg-[#202020] font-medium rounded-lg text-sm px-2 py-3 text-center w-[90%] hover:opacity-70 duration-300 hover:border-[#379600] hover:border-[1px] hover:space-y-2 portfolio-item"
+        //   type="button" data-id="${item.id}">
+        //   <span class="flex flex-col p-2 items-center justify-start">
+        //     <img src="${item.image}" alt="" class="w-[95%] h-[60%] mb-5 rounded-sm">
+        //     <p class="font-semibold text-xl text-left w-full px-2 mb-1">${item.title}</p>
+        //     <p class="text-xs text-left w-full px-2 text-[#A5A5A5]">${item.date}</p>
+        //   </span>
+        // </button>
+//       `;
+//     portfolioContainer.appendChild(portfolioItem);
+//   });
+
+//   document.querySelectorAll(".portfolio-item").forEach((button) => {
+//     button.addEventListener("click", function () {
+//       const itemId = parseInt(this.getAttribute("data-id"));
+//       const item = portfolioItems.find((i) => i.id === itemId);
+
+//       if (item) {
+//         modalContent.innerHTML = `
+            // <h1 class="text-center">${item.title}</h1>
+            // <p class="text-xs text-center text-[#A5A5A5] mb-6">${item.date}</p>
+            // <img src="${item.image}" alt="" class="w-full mb-5 rounded-sm">
+            // <p class="text-sm text-start text-[#A5A5A5] mb-6">${item.description}</p>
+            // <p class="text-sm text-[#A5A5A5] mb-6">Builder: ${item.builders}</p>
+//           `;
+//       }
+//     });
+//   });
+// });
+
+
 document.addEventListener("DOMContentLoaded", function () {
   const portfolioContainer = document.getElementById("portfolio-container");
   const modal = document.getElementById("portfolio-modal");
   const modalContent = document.getElementById("modal-content");
+  const closeBtn = document.querySelector('[data-modal-hide="portfolio-modal"]');
 
+  // Create portfolio items
   portfolioItems.forEach((item) => {
     const portfolioItem = document.createElement("div");
     portfolioItem.className = "flex justify-center";
     portfolioItem.innerHTML = `
         <button data-modal-target="portfolio-modal" data-modal-toggle="portfolio-modal"
-          class="block text-white bg-[#202020] font-medium rounded-lg text-sm px-2 py-3 text-center w-[90%] hover:opacity-70 duration-300 hover:border-[#379600] hover:border-[1px] hover:space-y-2 portfolio-item"
+          class="block text-white bg-[#202020] font-medium rounded-lg text-sm px-2 py-3 text-center w-[90%] hover:opacity-70  hover:border-[#379600] hover:border-[1px] hover:space-y-2 portfolio-item transition-all duration-300 ease-in-out"
           type="button" data-id="${item.id}">
           <span class="flex flex-col p-2 items-center justify-start">
             <img src="${item.image}" alt="" class="w-[95%] h-[60%] mb-5 rounded-sm">
@@ -102,27 +145,52 @@ document.addEventListener("DOMContentLoaded", function () {
             <p class="text-xs text-left w-full px-2 text-[#A5A5A5]">${item.date}</p>
           </span>
         </button>
-      `;
+    `;
     portfolioContainer.appendChild(portfolioItem);
   });
 
+  // Handle modal open
   document.querySelectorAll(".portfolio-item").forEach((button) => {
-    button.addEventListener("click", function () {
+    button.addEventListener("click", function() {
       const itemId = parseInt(this.getAttribute("data-id"));
       const item = portfolioItems.find((i) => i.id === itemId);
 
       if (item) {
         modalContent.innerHTML = `
-            <h1 class="text-center">${item.title}</h1>
+          <h1 class="text-center">${item.title}</h1>
             <p class="text-xs text-center text-[#A5A5A5] mb-6">${item.date}</p>
             <img src="${item.image}" alt="" class="w-full mb-5 rounded-sm">
             <p class="text-sm text-start text-[#A5A5A5] mb-6">${item.description}</p>
             <p class="text-sm text-[#A5A5A5] mb-6">Builder: ${item.builders}</p>
-          `;
+        `;
+        
+        // Show modal with animation
+        modal.classList.remove('hidden');
+        document.body.style.overflow = 'hidden'; // Prevent scrolling
+        setTimeout(() => {
+          modal.classList.add('show');
+        }, 10);
       }
     });
   });
+
+  // Handle modal close
+  closeBtn.addEventListener('click', function() {
+    modal.classList.remove('show');
+    setTimeout(() => {
+      modal.classList.add('hidden');
+      document.body.style.overflow = 'auto'; // Re-enable scrolling
+    }, 300);
+  });
+
+  // Close when clicking outside
+  modal.addEventListener('click', function(e) {
+    if (e.target === modal) {
+      modal.classList.remove('show');
+      setTimeout(() => {
+        modal.classList.add('hidden');
+        document.body.style.overflow = 'auto';
+      }, 300);
+    }
+  });
 });
-
-
-
