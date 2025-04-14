@@ -298,20 +298,17 @@
 
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script>
-        // Initialize EmailJS
         (function() {
-          emailjs.init("jHb_uzK3TCNFFJ_rR");
+          emailjs.init("gPIYfbF_sqx4C6Mic");
         })();
       
-        // Form submission handler
         document.getElementById('contact-form').addEventListener('submit', function(e) {
           e.preventDefault();
           
           const form = this;
-          const serviceID = 'service_w442wrb';
-          const templateID = 'template_khvzwcj';
+          const serviceID = 'service_r1gam35';
+          const templateID = 'template_i00rstr';
       
-          // Send form data
           emailjs.sendForm(serviceID, templateID, form)
             .then(
               function(response) {
