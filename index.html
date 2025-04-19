@@ -83,13 +83,27 @@
             border: none;
             border-radius: 5px;
             transition: background-color 0.3s;
-            z-index: 10; /* Pastikan tombol berada di atas gambar */
+            z-index: 10; 
         }
         
         .slider-button:hover {
-            background-color: #3b6b1f; /* Warna saat hover */
+            background-color: #3b6b1f; 
         }
 
+        .indicator-container {
+            display: flex; 
+            justify-content: center; /* Center the boxes */
+            margin-top: 10px; /* Space above the boxes */
+        }
+        
+        .indicator-box {
+            width: 10px; /* Width of the box */
+            height: 10px; /* Height of the box */
+            margin: 0 5px; /* Space between boxes */
+            border-radius: 1px; /* Make the boxes circular */
+            background-color: gray; /* Default color */
+            transition: background-color 0.3s; /* Smooth transition for color change */
+        }
       </style>
 </head>
 

@@ -155,13 +155,15 @@ const portfolioItems = [
 // });
 
 
+
+
 // document.addEventListener("DOMContentLoaded", function () {
 //   const portfolioContainer = document.getElementById("portfolio-container");
 //   const modal = document.getElementById("portfolio-modal");
 //   const modalContent = document.getElementById("modal-content");
 //   const closeBtn = document.querySelector('[data-modal-hide="portfolio-modal"]');
 
-//   // Create portfolio items
+//   // Membuat item portofolio
 //   portfolioItems.forEach((item) => {
 //     const portfolioItem = document.createElement("div");
 //     portfolioItem.className = "flex justify-center";
@@ -170,7 +172,7 @@ const portfolioItems = [
 //           class="block text-white bg-[#202020] font-medium rounded-lg text-sm px-2 py-3 text-center w-[90%] hover:opacity-70  hover:border-[#379600] hover:border-[1px] hover:space-y-2 portfolio-item transition-all duration-300 ease-in-out"
 //           type="button" data-id="${item.id}">
 //           <span class="flex flex-col p-2 items-center justify-start">
-//             <img src="${item.image}" alt="" class="w-[95%] h-[60%] mb-5 rounded-sm">
+//             <img src="${item.image[0]}" alt="" class="w-[95%] h-[60%] mb-5 rounded-sm">
 //             <p class="font-semibold text-xl text-left w-full px-2 mb-1">${item.title}</p>
 //             <p class="text-xs text-left w-full px-2 text-[#A5A5A5]">${item.date}</p>
 //           </span>
@@ -179,24 +181,30 @@ const portfolioItems = [
 //     portfolioContainer.appendChild(portfolioItem);
 //   });
 
-//   // Handle modal open
+//   // Menangani pembukaan modal
 //   document.querySelectorAll(".portfolio-item").forEach((button) => {
 //     button.addEventListener("click", function() {
 //       const itemId = parseInt(this.getAttribute("data-id"));
 //       const item = portfolioItems.find((i) => i.id === itemId);
 
 //       if (item) {
+//         const images = item.image.map((img) => `<img src="${img}" alt="" class="w-full mb-5 rounded-sm">`).join('');
 //         modalContent.innerHTML = `
 //           <h1 class="text-center">${item.title}</h1>
-//             <p class="text-xs text-center text-[#A5A5A5] mb-6">${item.date}</p>
-//             <img src="${item.image}" alt="" class="w-full mb-5 rounded-sm">
-//             <p class="text-sm text-start text-[#A5A5A5] mb-6">${item.description}</p>
-//             <p class="text-sm text-[#A5A5A5] mb-6">Builder: ${item.builders}</p>
+//           <p class="text-xs text-center text-[#A5A5A5] mb-6">${item.date}</p>
+//           <div class="image-slider">
+//             ${images}
+//           </div>
+//           <p class="text-sm text-start text-[#A5A5A5] mb-6">${item.description}</p>
+//           <p class="text-sm text-[#A5A5A5] mb-6">Builder: ${item.builders}</p>
 //         `;
-        
-//         // Show modal with animation
+
+//         // Inisialisasi slider
+//         initSlider();
+
+//         // Menampilkan modal dengan animasi
 //         modal.classList.remove('hidden');
-//         document.body.style.overflow = 'hidden'; // Prevent scrolling
+//         document.body.style.overflow = 'hidden'; // Mencegah scrolling
 //         setTimeout(() => {
 //           modal.classList.add('show');
 //         }, 10);
@@ -204,16 +212,16 @@ const portfolioItems = [
 //     });
 //   });
 
-//   // Handle modal close
+//   // Menangani penutupan modal
 //   closeBtn.addEventListener('click', function() {
 //     modal.classList.remove('show');
 //     setTimeout(() => {
 //       modal.classList.add('hidden');
-//       document.body.style.overflow = 'auto'; // Re-enable scrolling
+//       document.body.style.overflow = 'auto'; // Mengaktifkan kembali scrolling
 //     }, 300);
 //   });
 
-//   // Close when clicking outside
+//   // Menutup saat mengklik di luar modal
 //   modal.addEventListener('click', function(e) {
 //     if (e.target === modal) {
 //       modal.classList.remove('show');
@@ -223,6 +231,80 @@ const portfolioItems = [
 //       }, 300);
 //     }
 //   });
+
+//   // Inisialisasi fungsionalitas slider
+
+
+//   function initSlider() {
+//     const images = modalContent.querySelectorAll('.image-slider img');
+//     let currentIndex = 0;
+  
+//     images.forEach((img, index) => {
+//         img.style.display = index === 0 ? 'block' : 'none';
+//     });
+  
+//     const prevButton = document.createElement('button');
+//     prevButton.innerHTML = '<i class="ri-arrow-left-line"></i>'; // Left arrow icon
+//     prevButton.className = 'slider-button bg-[#379600] text-white p-2 rounded-l-md hover:bg-[#3b6b1f] transition-all duration-300 absolute left-5 transform -translate-y-1/2';
+  
+//     const nextButton = document.createElement('button');
+//     nextButton.innerHTML = '<i class="ri-arrow-right-line"></i>'; // Right arrow icon
+//     nextButton.className = 'slider-button bg-[#379600] text-white p-2 rounded-r-md hover:bg-[#3b6b1f] transition-all duration-300 absolute right-5 transform -translate-y-1/2';
+  
+//     modalContent.appendChild(prevButton);
+//     modalContent.appendChild(nextButton);
+  
+//     // Create indicator boxes
+//     const indicatorContainer = document.createElement('div');
+//     indicatorContainer.className = 'indicator-container flex justify-center mt-2';
+//     modalContent.appendChild(indicatorContainer);
+  
+//     images.forEach((_, index) => {
+//         const box = document.createElement('div');
+//         box.className = 'indicator-box w-4 h-4 mx-1 rounded-full bg-gray-400'; // Default gray color
+//         indicatorContainer.appendChild(box);
+//     });
+  
+//     updateIndicator();
+  
+//     function adjustButtonPosition() {
+//         if (window.innerWidth <= 768) { 
+//             prevButton.style.top = '35%'; 
+//             nextButton.style.top = '35%'; 
+//         } else {
+//             prevButton.style.top = '40%'; 
+//             nextButton.style.top = '40%'; 
+//         }
+//     }
+  
+//     adjustButtonPosition();
+  
+//     window.addEventListener('resize', adjustButtonPosition);
+  
+//     prevButton.addEventListener('click', function() {
+//         currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+//         updateSlider();
+//     });
+  
+//     nextButton.addEventListener('click', function() {
+//         currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+//         updateSlider();
+//     });
+  
+//     function updateSlider() {
+//         images.forEach((img, index) => {
+//             img.style.display = index === currentIndex ? 'block' : 'none';
+//         });
+//         updateIndicator();
+//     }
+  
+//     function updateIndicator() {
+//         const boxes = indicatorContainer.querySelectorAll('.indicator-box');
+//         boxes.forEach((box, index) => {
+//             box.style.backgroundColor = index === currentIndex ? '#379600' : 'gray'; // Green for current, gray for others
+//         });
+//     }
+//   }
 // });
 
 
@@ -232,7 +314,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const modalContent = document.getElementById("modal-content");
   const closeBtn = document.querySelector('[data-modal-hide="portfolio-modal"]');
 
-  // Membuat item portofolio
+  // Create portfolio items
   portfolioItems.forEach((item) => {
     const portfolioItem = document.createElement("div");
     portfolioItem.className = "flex justify-center";
@@ -250,7 +332,7 @@ document.addEventListener("DOMContentLoaded", function () {
     portfolioContainer.appendChild(portfolioItem);
   });
 
-  // Menangani pembukaan modal
+  // Handle modal open
   document.querySelectorAll(".portfolio-item").forEach((button) => {
     button.addEventListener("click", function() {
       const itemId = parseInt(this.getAttribute("data-id"));
@@ -261,19 +343,27 @@ document.addEventListener("DOMContentLoaded", function () {
         modalContent.innerHTML = `
           <h1 class="text-center">${item.title}</h1>
           <p class="text-xs text-center text-[#A5A5A5] mb-6">${item.date}</p>
-          <div class="image-slider">
-            ${images}
+          <div class="slider-container relative"> <!-- New container for slider -->
+            <div class="image-slider">
+              ${images}
+            </div>
+            <button class="prev-button absolute left-5 top-1/2 transform -translate-y-1/2 bg-[#379600] text-white p-2 rounded-l-md hover:bg-[#3b6b1f] transition-all duration-300">
+              <i class="ri-arrow-left-line"></i>
+            </button>
+            <button class="next-button absolute right-5 top-1/2 transform -translate-y-1/2 bg-[#379600] text-white p-2 rounded-r-md hover:bg-[#3b6b1f] transition-all duration-300">
+              <i class="ri-arrow-right-line"></i>
+            </button>
+            <div class="indicator-container flex justify-center mt-2"> <!-- Indicator boxes -->
+            </div>
           </div>
-          <p class="text-sm text-start text-[#A5A5A5] mb-6">${item.description}</p>
+          <p class="text-sm text-start text-[#A5A5A5] mb-6 mt-4">${item.description}</p>
           <p class="text-sm text-[#A5A5A5] mb-6">Builder: ${item.builders}</p>
         `;
 
-        // Inisialisasi slider
         initSlider();
 
-        // Menampilkan modal dengan animasi
         modal.classList.remove('hidden');
-        document.body.style.overflow = 'hidden'; // Mencegah scrolling
+        document.body.style.overflow = 'hidden';
         setTimeout(() => {
           modal.classList.add('show');
         }, 10);
@@ -281,16 +371,14 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Menangani penutupan modal
   closeBtn.addEventListener('click', function() {
     modal.classList.remove('show');
     setTimeout(() => {
       modal.classList.add('hidden');
-      document.body.style.overflow = 'auto'; // Mengaktifkan kembali scrolling
+      document.body.style.overflow = 'auto'; 
     }, 300);
   });
 
-  // Menutup saat mengklik di luar modal
   modal.addEventListener('click', function(e) {
     if (e.target === modal) {
       modal.classList.remove('show');
@@ -301,96 +389,50 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Inisialisasi fungsionalitas slider
-//   function initSlider() {
-//     const images = modalContent.querySelectorAll('.image-slider img');
-//     let currentIndex = 0;
-
-//     // Sembunyikan semua gambar kecuali yang pertama
-//     images.forEach((img, index) => {
-//         img.style.display = index === 0 ? 'block' : 'none';
-//     });
-
-//     // Membuat tombol navigasi dengan ikon
-//     const prevButton = document.createElement('button');
-//     prevButton.innerHTML = '<i class="ri-arrow-left-line"></i>'; // Ikon panah kiri
-//     prevButton.className = 'slider-button bg-[#379600] text-white p-2 rounded-l-md hover:bg-[#3b6b1f] transition-all duration-300 absolute top-60 left-20';
-
-//     const nextButton = document.createElement('button');
-//     nextButton.innerHTML = '<i class="ri-arrow-right-line"></i>'; // Ikon panah kanan
-//     nextButton.className = 'slider-button bg-[#379600] text-white p-2 rounded-r-md hover:bg-[#3b6b1f] transition-all duration-300';
-
-//     // Menambahkan tombol ke modal
-//     modalContent.appendChild(prevButton);
-//     modalContent.appendChild(nextButton);
-
-//     // Menangani klik tombol "Sebelumnya"
-//     prevButton.addEventListener('click', function() {
-//         currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
-//         updateSlider();
-//     });
-
-//     // Menangani klik tombol "Selanjutnya"
-//     nextButton.addEventListener('click', function() {
-//         currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
-//         updateSlider();
-//     });
-
-//     // Fungsi untuk memperbarui tampilan slider
-//     function updateSlider() {
-//         images.forEach((img, index) => {
-//             img.style.display = index === currentIndex ? 'block' : 'none';
-//         });
-//     }
-// }
-
-function initSlider() {
-  const images = modalContent.querySelectorAll('.image-slider img');
-  let currentIndex = 0;
-
-  images.forEach((img, index) => {
-      img.style.display = index === 0 ? 'block' : 'none';
-  });
-
-  const prevButton = document.createElement('button');
-  prevButton.innerHTML = '<i class="ri-arrow-left-line"></i>'; // Ikon panah kiri
-  prevButton.className = 'slider-button bg-[#379600] text-white p-2 rounded-l-md hover:bg-[#3b6b1f] transition-all duration-300 absolute left-5 transform -translate-y-1/2';
-
-  const nextButton = document.createElement('button');
-  nextButton.innerHTML = '<i class="ri-arrow-right-line"></i>'; // Ikon panah kanan
-  nextButton.className = 'slider-button bg-[#379600] text-white p-2 rounded-r-md hover:bg-[#3b6b1f] transition-all duration-300 absolute right-5 transform -translate-y-1/2';
-
-  modalContent.appendChild(prevButton);
-  modalContent.appendChild(nextButton);
-
-  function adjustButtonPosition() {
-      if (window.innerWidth <= 768) { 
-          prevButton.style.top = '35%'; 
-          nextButton.style.top = '35%'; 
-      } else {
-          prevButton.style.top = '40%'; 
-          nextButton.style.top = '40%'; 
-      }
-  }
-
-  adjustButtonPosition();
-
-  window.addEventListener('resize', adjustButtonPosition);
-
-  prevButton.addEventListener('click', function() {
-      currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
-      updateSlider();
-  });
-
-  nextButton.addEventListener('click', function() {
-      currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
-      updateSlider();
-  });
-
-  function updateSlider() {
+    function initSlider() {
+      const images = modalContent.querySelectorAll('.image-slider img');
+      let currentIndex = 0;
+  
       images.forEach((img, index) => {
-          img.style.display = index === currentIndex ? 'block' : 'none';
+          img.style.display = index === 0 ? 'block' : 'none';
       });
-  }
-}
-});
+  
+      const prevButton = modalContent.querySelector('.prev-button');
+      const nextButton = modalContent.querySelector('.next-button');
+      const indicatorContainer = modalContent.querySelector('.indicator-container');
+      
+      prevButton.style.borderRadius = '3px';
+      nextButton.style.borderRadius = '3px'
+      images.forEach((_, index) => {
+          const box = document.createElement('div');
+          box.className = 'indicator-box w-4 h-4 mx-1 rounded-full bg-gray-400'; 
+          indicatorContainer.appendChild(box);
+      });
+  
+      updateIndicator();
+  
+      prevButton.addEventListener('click', function() {
+          currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+          updateSlider();
+      });
+  
+      nextButton.addEventListener('click', function() {
+          currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+          updateSlider();
+      });
+  
+      function updateSlider() {
+          images.forEach((img, index) => {
+              img.style.display = index === currentIndex ? 'block' : 'none'; 
+          });
+          updateIndicator();
+      }
+  
+      function updateIndicator() {
+          const boxes = indicatorContainer.querySelectorAll('.indicator-box');
+          boxes.forEach((box, index) => {
+              box.style.backgroundColor = index === currentIndex ? '#379600' : 'gray';
+          });
+      }
+    }
+  });
