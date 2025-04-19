@@ -15,7 +15,7 @@
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
+
     <style>
         /* Add these modal animation styles */
         #portfolio-modal {
@@ -39,6 +39,57 @@
         #portfolio-modal.show .relative {
           transform: scale(1);
         }
+
+        .mySlides {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+            z-index: -1;
+        }
+        
+        .mySlides.active {
+            opacity: 1;
+            z-index: -1;
+        }
+        
+        .carousel-container {
+            position: absolute;
+            inset: 0;
+            z-index: -10;
+            overflow: hidden;
+        }
+        
+        .carousel-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+
+        .slider-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px; /* Atur lebar tombol */
+            height: 40px; /* Atur tinggi tombol */
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            z-index: 10; /* Pastikan tombol berada di atas gambar */
+        }
+        
+        .slider-button:hover {
+            background-color: #3b6b1f; /* Warna saat hover */
+        }
+
       </style>
 </head>
 
@@ -54,7 +105,7 @@
 
             <div id="nav-menu"
                 class="absolute font-Pixelify top-0 left-[-100%] min-h-[100vh] w-full bg-black/90 backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit lg:w-auto lg:backdrop-blur-none lg:bg-transparent lg:h-20">
-                <ul class="flex flex-col items-center gap-8 lg:flex-row">
+                <ul class="flex flex-col items-center gap-8 lg:flex-row px-5">
                     <li>
                         <a href="index.html#about" class="nav-link" onmouseover="this.style.color='#77ec34'" onmouseout="this.style.color='white'">About</a>
                     </li>
@@ -66,11 +117,16 @@
                     </li>
                     <li>
                         <a href="index.html#formApp" class="nav-link">
-                            <span
-                                class="bg-[#379600] hover:bg-[#3b6b1f] px-12 py-4 apply-button text-[20px] shadow-custom duration-300 lg:py-3 lg:px-7 lg:text-base">Apply
-                                Now</span>
+                            <div class="relative inline-block">
+                                <div class="absolute inset-0 translate-x-2 translate-y-2 shadow-lg blur-xl bg-[#379600] opacity-60 rounded-md z-0"></div>
+                
+                                <span class="bg-[#379600] hover:bg-[#3b6b1f] px-12 py-4 apply-button text-[20px] duration-300 lg:py-3 lg:px-7 lg:text-base relative z-10">
+                                    Apply Now
+                                </span>
+                            </div>
                         </a>
                     </li>
+                    
                 </ul>
             </div>
 
@@ -82,7 +138,7 @@
 
     <main>
         <!-- Home -->
-        <section id="home" class=" bg-hero min-h-[500px] bg-center bg-cover backdrop-blur-md lg:min-h-[100vh] z-30 justify-content-center">
+        <!-- <section id="home" class="relative bg-hero min-h-[500px] bg-center bg-cover backdrop-blur-md lg:min-h-[100vh] z-30 justify-content-center">
             <div class="container h-[460px] flex flex-col gap-4 justify-center text-center items-center">
                 <h1 data-aos="fade-up" class="w-full md:w-[560px] lg:w-[960px] lg:text-5xl xl:text-7xl">Submit your
                     minecraft projects-we'll bring to the marketplace.</h1>
@@ -94,12 +150,56 @@
                         Now</span>
                 </a>
             </div>
-            <a data-aos="fade-up"  href="#about">
-                <div class=" flex justify-self-center">
-                    <img src="assets/img/arrowdown.svg " alt="downicon" class="animate-bounce ">
-                </div>
-            </a>
-        </section> 
+            
+            <div class="absolute bottom-1 w-full flex justify-center">
+                <a href="#about">
+                  <div class="w-[60px]">
+                    <img src="assets/img/arrowdown.svg" alt="downicon" class="animate-bounce w-full">
+                  </div>
+                </a>
+            </div>
+            
+        </section>  -->
+
+        <section id="home" class="relative min-h-[500px] lg:min-h-[100vh] z-30 flex items-center justify-center">
+            <div class="carousel-container absolute inset-0 -z-10">
+                <div class="carousel-overlay"></div> 
+                <div class="mySlides active bg-cover bg-center w-full h-full" style="background-image: url('assets/img/background.png');"></div>
+                <div class="mySlides bg-cover bg-center w-full h-full" style="background-image: url('assets/img/bg7.jpg');"></div>
+                <div class="mySlides bg-cover bg-center w-full h-full" style="background-image: url('assets/img/bg8.jpg');"></div>
+            </div>
+            <div class="bg-black opacity-50 absolute w-full h-full"></div>
+            
+            <div class="container flex flex-col gap-4 justify-center text-center items-center relative z-10">
+                <h1 data-aos="fade-up" class="w-full md:w-[560px] lg:w-[960px] lg:text-5xl xl:text-7xl">Submit your
+                    minecraft projects-we'll bring to the marketplace.</h1>
+                <p data-aos="fade-up" data-aos-delay="300" class="font-Poppins text-base font- lg:text-2xl">Official publisher. Simple process.
+                    Fair collaboration.</p>
+                <!-- <a data-aos="fade-up" data-aos-delay="500" href="#formApp" class="my-4">
+                    <span
+                        class="bg-[#379600] font-Pixelify px-12 py-4 apply-button text-[20px] shadow-custom duration-300 md:py-4 text-2xl font-extralight md:text-xl hover:bg-[#3b6b1f]">Apply
+                        Now</span>
+                </a> -->
+                <a href="index.html#formApp" class="nav-link my-8">
+                    <div class="relative inline-block">
+                        <div class="absolute inset-0 translate-x-2 translate-y-2 shadow-lg blur-md bg-[#379600] opacity-60 rounded-md z-0"></div>
+        
+                        <span class="bg-[#379600] font-Pixelify px-12 py-4 apply-button text-[20px] shadow-custom duration-300 md:py-4 text-2xl font-extralight md:text-xl hover:bg-[#3b6b1f]">
+                            Apply Now
+                        </span>
+                    </div>
+                </a>
+            </div>
+        
+            <div class="absolute bottom-1 w-full flex justify-center z-10">
+                <a href="#about">
+                    <div class="w-[60px]">
+                        <img src="assets/img/arrowdown.svg" alt="downicon" class="animate-bounce w-full">
+                    </div>
+                </a>
+            </div>
+        </section>
+        
 
         <!-- About -->
         <section id="about" class="bg-[#000000] relative overflow-x-hidden">
@@ -242,9 +342,19 @@
                                     agree to my data being stored for communication purposes.
                                 </label>
                             </div>
-                            <button type="submit"
+                            <!-- <button type="submit"
                                 class="bg-[#379600] hover:bg-[#3b6b1f] w-[70%] lg:w-[30%] px-8 py-4 apply-button text-base font-Pixelify shadow-custom duration-300 mx-auto my-8">Submit
-                                Project</button>
+                                Project</button> -->
+                                <div class="relative w-[70%] lg:w-[30%] mx-auto my-8">
+                                    <div class="absolute inset-0 translate-y-2 blur-xl bg-[#379600] opacity-50 rounded-md z-0"></div>
+                                
+                                    <button type="submit"
+                                        class="bg-[#379600] hover:bg-[#3b6b1f] w-full px-8 py-4 apply-button text-base font-Pixelify duration-300 relative z-10">
+                                        Submit Project
+                                    </button>
+                                </div>
+                                
+                                
                         </form>
                     </div>
                 </div>
@@ -269,13 +379,13 @@
                 <a href="https://www.instagram.com/heropixel_games/" target="_blank">
                     <i class="ri-instagram-line text-4xl lg:text-5xl"></i>
                 </a>
-                <a href="https://www.planetminecraft.com/member/heropixel_games/" target="_blank">
-                    <img src="assets/img/iconminecraft.jpg" alt="icon-minecraft" class="w-12">
+                <a href="https://youtube.com/@heropixelgames" target="_blank">
+                    <i class="ri-youtube-fill text-4xl lg:text-5xl"></i>
                 </a>
             </div>
             <div class="border-b-[0.5px] w-full border-[#484848] mt-2"></div>
             <p class="text-[10px] lg:text-base font-extralight text-[#A5A5A5] text-center mt-4">Copyright ©
-                HeroPixels.org 2025. <span class="text-[#379600]"><a href="privacy.html" target="_blank">Privacy Policy.</a> <a href="imprint.html" target="_blank">Imprint.</a></span></p>
+                HeroPixels.org 2025. <span class="text-[#379600]"><a href="privacy.html" target="_blank">Privacy Policy.</a> <a href="https://heropixel.games/imprint.html" target="_blank">Imprint.</a></span></p>
         </div>
     </footer>
 
@@ -326,6 +436,26 @@
           alert(message);
          
         }
+
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            
+            for (i = 0; i < slides.length; i++) {
+                slides[i].classList.remove("active");
+            }
+            
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            
+            slides[slideIndex-1].classList.add("active");
+            
+            setTimeout(showSlides, 2000);
+        }
+
       </script>
 </body>
 
