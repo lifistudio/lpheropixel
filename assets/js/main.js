@@ -344,42 +344,49 @@ document.addEventListener("DOMContentLoaded", function () {
 //     }
 // }
 
-// Inisialisasi fungsionalitas slider
 function initSlider() {
   const images = modalContent.querySelectorAll('.image-slider img');
   let currentIndex = 0;
 
-  // Sembunyikan semua gambar kecuali yang pertama
   images.forEach((img, index) => {
       img.style.display = index === 0 ? 'block' : 'none';
   });
 
-  // Membuat tombol navigasi dengan ikon
   const prevButton = document.createElement('button');
   prevButton.innerHTML = '<i class="ri-arrow-left-line"></i>'; // Ikon panah kiri
-  prevButton.className = 'slider-button bg-[#379600] text-white p-2 rounded-l-md hover:bg-[#3b6b1f] transition-all duration-300 absolute top-1/2 left-5 transform -translate-y-1/2';
+  prevButton.className = 'slider-button bg-[#379600] text-white p-2 rounded-l-md hover:bg-[#3b6b1f] transition-all duration-300 absolute left-5 transform -translate-y-1/2';
 
   const nextButton = document.createElement('button');
   nextButton.innerHTML = '<i class="ri-arrow-right-line"></i>'; // Ikon panah kanan
-  nextButton.className = 'slider-button bg-[#379600] text-white p-2 rounded-r-md hover:bg-[#3b6b1f] transition-all duration-300 absolute top-1/2 right-5 transform -translate-y-1/2';
+  nextButton.className = 'slider-button bg-[#379600] text-white p-2 rounded-r-md hover:bg-[#3b6b1f] transition-all duration-300 absolute right-5 transform -translate-y-1/2';
 
-  // Menambahkan tombol ke modal
   modalContent.appendChild(prevButton);
   modalContent.appendChild(nextButton);
 
-  // Menangani klik tombol "Sebelumnya"
+  function adjustButtonPosition() {
+      if (window.innerWidth <= 768) { 
+          prevButton.style.top = '35%'; 
+          nextButton.style.top = '35%'; 
+      } else {
+          prevButton.style.top = '40%'; 
+          nextButton.style.top = '40%'; 
+      }
+  }
+
+  adjustButtonPosition();
+
+  window.addEventListener('resize', adjustButtonPosition);
+
   prevButton.addEventListener('click', function() {
       currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
       updateSlider();
   });
 
-  // Menangani klik tombol "Selanjutnya"
   nextButton.addEventListener('click', function() {
       currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
       updateSlider();
   });
 
-  // Fungsi untuk memperbarui tampilan slider
   function updateSlider() {
       images.forEach((img, index) => {
           img.style.display = index === currentIndex ? 'block' : 'none';
