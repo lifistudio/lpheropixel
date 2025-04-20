@@ -252,6 +252,8 @@ document.addEventListener("DOMContentLoaded", function () {
         updateSlider();
       });
     });
+
+    updateIndicator();
   
     const goToPrev = () => {
       currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
