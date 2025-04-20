@@ -36,9 +36,14 @@ const portfolioItems = [
     date: "July 2019",
     image: [
       "assets/img/4bit_craft.jpeg",
-      "assets/img/4bit2.jpg",
-      "assets/img/4bit3.jpg",
-      "assets/img/4bit4.jpg",
+      "assets/img/4bitcraft/4Bit_Craft_MarketingScreenshot_0.jpg",
+      "assets/img/4bitcraft/4Bit_Craft_MarketingScreenshot_1.jpg",
+      "assets/img/4bitcraft/4Bit_Craft_MarketingScreenshot_2.jpg",
+      "assets/img/4bitcraft/4Bit_Craft_MarketingScreenshot_3.jpg",
+      "assets/img/4bitcraft/4Bit_Craft_MarketingScreenshot_4.jpg",
+      "assets/img/4bitcraft/4Bit_Craft_MarketingScreenshot_5.jpg",
+      "assets/img/4bitcraft/4Bit_Craft_MarketingScreenshot_6.jpg",
+      "assets/img/4bitcraft/4Bit_Craft_MarketingScreenshot_7.jpg",
     ],
     description:
       "Turn your Minecraft into a super cute game! Everything seems tiny: every block, every mob, every tree.<br><br>- Super cute 4x4 pack<br>- 4x4 blocks, items, mobs and more<br>- Faithful to vanilla textures<br>- 1.20 Resource Pack",
@@ -51,14 +56,15 @@ const portfolioItems = [
     date: "July 2019",
     image: [
           "assets/img/more_allays.jpeg",
-          "assets/img/more_allays2.jpg",
-          "assets/img/more_allays3.jpg",
-          "assets/img/more_allays4.jpg",
+          "assets/img/moreallays/More_Allays_MarketingScreenshot_0.jpg",
+          "assets/img/moreallays/More_Allays_MarketingScreenshot_1.jpg",
+          "assets/img/moreallays/More_Allays_MarketingScreenshot_2.jpg",
+          "assets/img/moreallays/More_Allays_MarketingScreenshot_3.jpg",
+          "assets/img/moreallays/More_Allays_MarketingScreenshot_4.jpg",
     ],
     description:
       "+ 16 cute Allays added!<br> <br>+ Allay Dungeons &amp; Temples<br><br>+ 10 Allay skins included<br><br> ++ Multiplayer &amp; Singleplayer friendly<br><br><br>Start your Minecraft survival adventure! Many new Allays are waiting for you: Enderman Allay, Axolotl Allay, Warden Allay and many more! Free them from the dungeons and temples. Tame them and they will become your loyal pets!",
-    builders:
-      "affe481 - koin1 - BigKingHD - Chonike - FlyingZera - hackerpotter - M1ller_ - sebsy - VyseHD - WoIstMeineSocke - Youseles",
+    
   },
   {
     id: 3,
@@ -66,12 +72,19 @@ const portfolioItems = [
     date: "17 February 2025 ",
     image: [
       "assets/img/giant_tnt.jpg",
-      "assets/img/giant_tnt2.jpg",
-      "assets/img/giant_tnt3.jpg",
-      "assets/img/giant_tnt4.jpg",
+      "assets/img/gianttnt/GIANT_TNT_MarketingScreenshot_0.jpg",
+      "assets/img/gianttnt/GIANT_TNT_MarketingScreenshot_1.jpg",
+      "assets/img/gianttnt/GIANT_TNT_MarketingScreenshot_2.jpg",
+      "assets/img/gianttnt/GIANT_TNT_MarketingScreenshot_3.jpg",
+      "assets/img/gianttnt/GIANT_TNT_MarketingScreenshot_4.jpg",
+      "assets/img/gianttnt/GIANT_TNT_MarketingScreenshot_5.jpg",
+      "assets/img/gianttnt/GIANT_TNT_MarketingScreenshot_6.jpg",
+      "assets/img/gianttnt/GIANT_TNT_MarketingScreenshot_7.jpg",
+      "assets/img/gianttnt/GIANT_TNT_MarketingScreenshot_8.jpg",
+      "assets/img/gianttnt/GIANT_TNT_MarketingScreenshot_9.jpg",
     ],
     description: "Description: Do you need the most extreme? These TNTs not only destroy bases, but also entire villages and large cities. Have fun with them! <br><br>Over 40 different Giant TNTs Maximum destruction and explosions Tornado, meteor, 5,000x and more TNTs!<br><br>++ Use it on your world! <br>++ Multiplayer friendly!<br>",
-    builders: "Builder list goes here",
+    
   },
   {
     id: 4,
@@ -79,12 +92,19 @@ const portfolioItems = [
     date: "July 2019",
     image: [
       "assets/img/pastelparadise.jpg",
-      "assets/img/pastelparadise2.jpg",
-      "assets/img/pastelparadise3.jpg",
-      "assets/img/pastelparadise4.jpg",
+      "assets/img/pastelparadise/PastelParadise_MarketingScreenshot_0.jpg",
+      "assets/img/pastelparadise/PastelParadise_MarketingScreenshot_1.jpg",
+      "assets/img/pastelparadise/PastelParadise_MarketingScreenshot_2.jpg",
+      "assets/img/pastelparadise/PastelParadise_MarketingScreenshot_3.jpg",
+      "assets/img/pastelparadise/PastelParadise_MarketingScreenshot_4.jpg",
+      "assets/img/pastelparadise/PastelParadise_MarketingScreenshot_5.jpg",
+      "assets/img/pastelparadise/PastelParadise_MarketingScreenshot_6.jpg",
+      "assets/img/pastelparadise/PastelParadise_MarketingScreenshot_7.jpg",
+      "assets/img/pastelparadise/PastelParadise_MarketingScreenshot_8.jpg",
+      "assets/img/pastelparadise/PastelParadise_MarketingScreenshot_9.jpg",
     ],
     description: "Immerse yourself in the soothing beauty of pastel textures and colors.<br><br>+ 1.21 Tricky Trials textures update<br>+ Everything retextured in pastel style<br>+ New mob, animal and boss models<br>+ Texture block variations<br>+ Animated ores<br>+ Attention to detail<br><br>++ Use this texture pack in your world!<br>++ Watch the trailer! ++",
-    builders: "Builder list goes here",
+    
   },
   {
     id: 5,
@@ -92,12 +112,14 @@ const portfolioItems = [
     date: "July 2019",
     image: [
       "assets/img/zombie_bunker.jpg",
-      "assets/img/zombiew_bunker2.jpg",
-      "assets/img/zombiew_bunker3.jpg",
-      "assets/img/zombiew_bunker4.jpg",
+      "assets/img/zombiebunker/Zombie_Bunker_MarketingScreenshot_0.jpg",
+      "assets/img/zombiebunker/Zombie_Bunker_MarketingScreenshot_1.jpg",
+      "assets/img/zombiebunker/Zombie_Bunker_MarketingScreenshot_2.jpg",
+      "assets/img/zombiebunker/Zombie_Bunker_MarketingScreenshot_3.jpg",
+      "assets/img/zombiebunker/Zombie_Bunker_MarketingScreenshot_4.jpg",
     ],
     description: "Protect your friends and yourself from a Zombie Apocalypse in a high security base! Your underground bunker has everything you need to survive. Press buttons and activate the anti-zombie walls!<br><br>+ Activatable safety walls<br>+ Secret bunker<br>+ Secure base<br>+ Zombie apocalypse<br>+ Custom zombies<br>++ Multiplayer and singleplayer",
-    builders: "Builder list goes here",
+    
   },
   {
     id: 6,
@@ -105,208 +127,21 @@ const portfolioItems = [
     date: "July 2019",
     image: [
       "assets/img/more_creepers.jpg",
-      "assets/img/more_creepers2.jpg",
-      "assets/img/more_creepers3.jpg",
-      "assets/img/more_creepers4.jpg",
+      "assets/img/morecreeper/More_Creepers_MarketingScreenshot_0.jpg",
+      "assets/img/morecreeper/More_Creepers_MarketingScreenshot_1.jpg",
+      "assets/img/morecreeper/More_Creepers_MarketingScreenshot_2.jpg",
+      "assets/img/morecreeper/More_Creepers_MarketingScreenshot_3.jpg",
+      "assets/img/morecreeper/More_Creepers_MarketingScreenshot_4.jpg",
+      "assets/img/morecreeper/More_Creepers_MarketingScreenshot_5.jpg",
+      "assets/img/morecreeper/More_Creepers_MarketingScreenshot_6.jpg",
+      "assets/img/morecreeper/More_Creepers_MarketingScreenshot_7.jpg",
+      "assets/img/morecreeper/More_Creepers_MarketingScreenshot_8.jpg",
+      "assets/img/morecreeper/More_Creepers_MarketingScreenshot_9.jpg",
     ],
     description: "BOOOM! Add more unique Creepers to your world or realms project.<br><br>+ 10 ultimate Creeper<br>+ Amazing explosions<br>+ Collect creeper heads<br><br>++ Use it in YOUR WORLD! ++",
-    builders: "Builder list goes here",
+    
   },
 ];
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   const portfolioContainer = document.getElementById("portfolio-container");
-//   const modal = document.getElementById("portfolio-modal");
-//   const modalContent = document.getElementById("modal-content");
-
-//   portfolioItems.forEach((item) => {
-//     const portfolioItem = document.createElement("div");
-//     portfolioItem.className = "flex justify-center";
-//     portfolioItem.innerHTML = `
-        // <button data-modal-target="portfolio-modal" data-modal-toggle="portfolio-modal"
-        //   class="block text-white bg-[#202020] font-medium rounded-lg text-sm px-2 py-3 text-center w-[90%] hover:opacity-70 duration-300 hover:border-[#379600] hover:border-[1px] hover:space-y-2 portfolio-item"
-        //   type="button" data-id="${item.id}">
-        //   <span class="flex flex-col p-2 items-center justify-start">
-        //     <img src="${item.image}" alt="" class="w-[95%] h-[60%] mb-5 rounded-sm">
-        //     <p class="font-semibold text-xl text-left w-full px-2 mb-1">${item.title}</p>
-        //     <p class="text-xs text-left w-full px-2 text-[#A5A5A5]">${item.date}</p>
-        //   </span>
-        // </button>
-//       `;
-//     portfolioContainer.appendChild(portfolioItem);
-//   });
-
-//   document.querySelectorAll(".portfolio-item").forEach((button) => {
-//     button.addEventListener("click", function () {
-//       const itemId = parseInt(this.getAttribute("data-id"));
-//       const item = portfolioItems.find((i) => i.id === itemId);
-
-//       if (item) {
-//         modalContent.innerHTML = `
-            // <h1 class="text-center">${item.title}</h1>
-            // <p class="text-xs text-center text-[#A5A5A5] mb-6">${item.date}</p>
-            // <img src="${item.image}" alt="" class="w-full mb-5 rounded-sm">
-            // <p class="text-sm text-start text-[#A5A5A5] mb-6">${item.description}</p>
-            // <p class="text-sm text-[#A5A5A5] mb-6">Builder: ${item.builders}</p>
-//           `;
-//       }
-//     });
-//   });
-// });
-
-
-
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   const portfolioContainer = document.getElementById("portfolio-container");
-//   const modal = document.getElementById("portfolio-modal");
-//   const modalContent = document.getElementById("modal-content");
-//   const closeBtn = document.querySelector('[data-modal-hide="portfolio-modal"]');
-
-//   // Membuat item portofolio
-//   portfolioItems.forEach((item) => {
-//     const portfolioItem = document.createElement("div");
-//     portfolioItem.className = "flex justify-center";
-//     portfolioItem.innerHTML = `
-//         <button data-modal-target="portfolio-modal" data-modal-toggle="portfolio-modal"
-//           class="block text-white bg-[#202020] font-medium rounded-lg text-sm px-2 py-3 text-center w-[90%] hover:opacity-70  hover:border-[#379600] hover:border-[1px] hover:space-y-2 portfolio-item transition-all duration-300 ease-in-out"
-//           type="button" data-id="${item.id}">
-//           <span class="flex flex-col p-2 items-center justify-start">
-//             <img src="${item.image[0]}" alt="" class="w-[95%] h-[60%] mb-5 rounded-sm">
-//             <p class="font-semibold text-xl text-left w-full px-2 mb-1">${item.title}</p>
-//             <p class="text-xs text-left w-full px-2 text-[#A5A5A5]">${item.date}</p>
-//           </span>
-//         </button>
-//     `;
-//     portfolioContainer.appendChild(portfolioItem);
-//   });
-
-//   // Menangani pembukaan modal
-//   document.querySelectorAll(".portfolio-item").forEach((button) => {
-//     button.addEventListener("click", function() {
-//       const itemId = parseInt(this.getAttribute("data-id"));
-//       const item = portfolioItems.find((i) => i.id === itemId);
-
-//       if (item) {
-//         const images = item.image.map((img) => `<img src="${img}" alt="" class="w-full mb-5 rounded-sm">`).join('');
-//         modalContent.innerHTML = `
-//           <h1 class="text-center">${item.title}</h1>
-//           <p class="text-xs text-center text-[#A5A5A5] mb-6">${item.date}</p>
-//           <div class="image-slider">
-//             ${images}
-//           </div>
-//           <p class="text-sm text-start text-[#A5A5A5] mb-6">${item.description}</p>
-//           <p class="text-sm text-[#A5A5A5] mb-6">Builder: ${item.builders}</p>
-//         `;
-
-//         // Inisialisasi slider
-//         initSlider();
-
-//         // Menampilkan modal dengan animasi
-//         modal.classList.remove('hidden');
-//         document.body.style.overflow = 'hidden'; // Mencegah scrolling
-//         setTimeout(() => {
-//           modal.classList.add('show');
-//         }, 10);
-//       }
-//     });
-//   });
-
-//   // Menangani penutupan modal
-//   closeBtn.addEventListener('click', function() {
-//     modal.classList.remove('show');
-//     setTimeout(() => {
-//       modal.classList.add('hidden');
-//       document.body.style.overflow = 'auto'; // Mengaktifkan kembali scrolling
-//     }, 300);
-//   });
-
-//   // Menutup saat mengklik di luar modal
-//   modal.addEventListener('click', function(e) {
-//     if (e.target === modal) {
-//       modal.classList.remove('show');
-//       setTimeout(() => {
-//         modal.classList.add('hidden');
-//         document.body.style.overflow = 'auto';
-//       }, 300);
-//     }
-//   });
-
-//   // Inisialisasi fungsionalitas slider
-
-
-//   function initSlider() {
-//     const images = modalContent.querySelectorAll('.image-slider img');
-//     let currentIndex = 0;
-  
-//     images.forEach((img, index) => {
-//         img.style.display = index === 0 ? 'block' : 'none';
-//     });
-  
-//     const prevButton = document.createElement('button');
-//     prevButton.innerHTML = '<i class="ri-arrow-left-line"></i>'; // Left arrow icon
-//     prevButton.className = 'slider-button bg-[#379600] text-white p-2 rounded-l-md hover:bg-[#3b6b1f] transition-all duration-300 absolute left-5 transform -translate-y-1/2';
-  
-//     const nextButton = document.createElement('button');
-//     nextButton.innerHTML = '<i class="ri-arrow-right-line"></i>'; // Right arrow icon
-//     nextButton.className = 'slider-button bg-[#379600] text-white p-2 rounded-r-md hover:bg-[#3b6b1f] transition-all duration-300 absolute right-5 transform -translate-y-1/2';
-  
-//     modalContent.appendChild(prevButton);
-//     modalContent.appendChild(nextButton);
-  
-//     // Create indicator boxes
-//     const indicatorContainer = document.createElement('div');
-//     indicatorContainer.className = 'indicator-container flex justify-center mt-2';
-//     modalContent.appendChild(indicatorContainer);
-  
-//     images.forEach((_, index) => {
-//         const box = document.createElement('div');
-//         box.className = 'indicator-box w-4 h-4 mx-1 rounded-full bg-gray-400'; // Default gray color
-//         indicatorContainer.appendChild(box);
-//     });
-  
-//     updateIndicator();
-  
-//     function adjustButtonPosition() {
-//         if (window.innerWidth <= 768) { 
-//             prevButton.style.top = '35%'; 
-//             nextButton.style.top = '35%'; 
-//         } else {
-//             prevButton.style.top = '40%'; 
-//             nextButton.style.top = '40%'; 
-//         }
-//     }
-  
-//     adjustButtonPosition();
-  
-//     window.addEventListener('resize', adjustButtonPosition);
-  
-//     prevButton.addEventListener('click', function() {
-//         currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
-//         updateSlider();
-//     });
-  
-//     nextButton.addEventListener('click', function() {
-//         currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
-//         updateSlider();
-//     });
-  
-//     function updateSlider() {
-//         images.forEach((img, index) => {
-//             img.style.display = index === currentIndex ? 'block' : 'none';
-//         });
-//         updateIndicator();
-//     }
-  
-//     function updateIndicator() {
-//         const boxes = indicatorContainer.querySelectorAll('.indicator-box');
-//         boxes.forEach((box, index) => {
-//             box.style.backgroundColor = index === currentIndex ? '#379600' : 'gray'; // Green for current, gray for others
-//         });
-//     }
-//   }
-// });
-
 
 document.addEventListener("DOMContentLoaded", function () {
   const portfolioContainer = document.getElementById("portfolio-container");
@@ -314,7 +149,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const modalContent = document.getElementById("modal-content");
   const closeBtn = document.querySelector('[data-modal-hide="portfolio-modal"]');
 
-  // Create portfolio items
   portfolioItems.forEach((item) => {
     const portfolioItem = document.createElement("div");
     portfolioItem.className = "flex justify-center";
@@ -332,7 +166,6 @@ document.addEventListener("DOMContentLoaded", function () {
     portfolioContainer.appendChild(portfolioItem);
   });
 
-  // Handle modal open
   document.querySelectorAll(".portfolio-item").forEach((button) => {
     button.addEventListener("click", function() {
       const itemId = parseInt(this.getAttribute("data-id"));
@@ -343,8 +176,8 @@ document.addEventListener("DOMContentLoaded", function () {
         modalContent.innerHTML = `
           <h1 class="text-center">${item.title}</h1>
           <p class="text-xs text-center text-[#A5A5A5] mb-6">${item.date}</p>
-          <div class="slider-container relative"> <!-- New container for slider -->
-            <div class="image-slider">
+          <div class="slider-container relative">
+            <div class="image-slider aspect-video">
               ${images}
             </div>
             <button class="prev-button absolute left-5 top-1/2 transform -translate-y-1/2 bg-[#379600] text-white p-2 rounded-l-md hover:bg-[#3b6b1f] transition-all duration-300">
@@ -353,11 +186,9 @@ document.addEventListener("DOMContentLoaded", function () {
             <button class="next-button absolute right-5 top-1/2 transform -translate-y-1/2 bg-[#379600] text-white p-2 rounded-r-md hover:bg-[#3b6b1f] transition-all duration-300">
               <i class="ri-arrow-right-line"></i>
             </button>
-            <div class="indicator-container flex justify-center mt-2"> <!-- Indicator boxes -->
-            </div>
+            <div class="indicator-container flex justify-center mt-2"></div>
           </div>
           <p class="text-sm text-start text-[#A5A5A5] mb-6 mt-4">${item.description}</p>
-          <p class="text-sm text-[#A5A5A5] mb-6">Builder: ${item.builders}</p>
         `;
 
         initSlider();
@@ -389,50 +220,122 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-    function initSlider() {
-      const images = modalContent.querySelectorAll('.image-slider img');
-      let currentIndex = 0;
+  function initSlider() {
+    const images = modalContent.querySelectorAll('.image-slider img');
+    let currentIndex = 0;
+    let startX = 0;
+    let isDragging = false;
   
-      images.forEach((img, index) => {
-          img.style.display = index === 0 ? 'block' : 'none';
-      });
+    const sliderContainer = modalContent.querySelector('.slider-container');
+    const imageSlider = modalContent.querySelector('.image-slider');
+    const prevButton = modalContent.querySelector('.prev-button');
+    const nextButton = modalContent.querySelector('.next-button');
+    const indicatorContainer = modalContent.querySelector('.indicator-container');
   
-      const prevButton = modalContent.querySelector('.prev-button');
-      const nextButton = modalContent.querySelector('.next-button');
-      const indicatorContainer = modalContent.querySelector('.indicator-container');
+    imageSlider.style.display = 'flex';
+    imageSlider.style.width = `${images.length * 100}%`;
+    imageSlider.style.transition = 'transform 0.3s ease';
+    
+    images.forEach(img => {
+      img.style.width = `${100 / images.length}%`;
+      img.style.flexShrink = '0';
+      img.style.pointerEvents = 'none'; 
+    });
+  
+    images.forEach((_, index) => {
+      const box = document.createElement('div');
+      box.className = 'indicator-box w-4 h-4 mx-1 rounded-full bg-gray-400 cursor-pointer';
+      indicatorContainer.appendChild(box);
       
-      prevButton.style.borderRadius = '3px';
-      nextButton.style.borderRadius = '3px'
-      images.forEach((_, index) => {
-          const box = document.createElement('div');
-          box.className = 'indicator-box w-4 h-4 mx-1 rounded-full bg-gray-400'; 
-          indicatorContainer.appendChild(box);
+      box.addEventListener('click', () => {
+        currentIndex = index;
+        updateSlider();
       });
+    });
   
+    const goToPrev = () => {
+      currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+      updateSlider();
+    };
+  
+    const goToNext = () => {
+      currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+      updateSlider();
+    };
+  
+    prevButton.addEventListener('click', goToPrev);
+    nextButton.addEventListener('click', goToNext);
+  
+    const leftClickArea = document.createElement('div');
+    leftClickArea.className = 'absolute left-0 top-0 h-full w-1/3 z-10 cursor-wester';
+    leftClickArea.style.backgroundColor = 'transparent';
+    
+    const rightClickArea = document.createElement('div');
+    rightClickArea.className = 'absolute right-0 top-0 h-full w-1/3 z-10 cursor-easter';
+    rightClickArea.style.backgroundColor = 'transparent';
+  
+    sliderContainer.appendChild(leftClickArea);
+    sliderContainer.appendChild(rightClickArea);
+  
+    leftClickArea.addEventListener('click', goToPrev);
+    rightClickArea.addEventListener('click', goToNext);
+  
+    const handleDragStart = (e) => {
+      isDragging = true;
+      startX = e.type.includes('touch') ? e.touches[0].clientX : e.clientX;
+      imageSlider.style.transition = 'none';
+    };
+  
+    const handleDragMove = (e) => {
+      if (!isDragging) return;
+      
+      const currentX = e.type.includes('touch') ? e.touches[0].clientX : e.clientX;
+      const diffX = currentX - startX;
+      
+      const offset = -currentIndex * (100 / images.length);
+      const newOffset = offset + (diffX / imageSlider.offsetWidth) * 100;
+      imageSlider.style.transform = `translateX(${newOffset}%)`;
+    };
+  
+    const handleDragEnd = (e) => {
+      if (!isDragging) return;
+      isDragging = false;
+      imageSlider.style.transition = 'transform 0.3s ease';
+      
+      const endX = e.type.includes('touch') ? e.changedTouches[0].clientX : e.clientX;
+      const diffX = endX - startX;
+      
+      if (Math.abs(diffX) > 50) {
+        if (diffX > 0) {
+          goToPrev();
+        } else {
+          goToNext();
+        }
+      } else {
+        updateSlider();
+      }
+    };
+  
+    sliderContainer.addEventListener('touchstart', handleDragStart, { passive: false });
+    sliderContainer.addEventListener('touchmove', handleDragMove, { passive: false });
+    sliderContainer.addEventListener('touchend', handleDragEnd, { passive: false });
+  
+    sliderContainer.addEventListener('mousedown', handleDragStart);
+    sliderContainer.addEventListener('mousemove', handleDragMove);
+    sliderContainer.addEventListener('mouseup', handleDragEnd);
+    sliderContainer.addEventListener('mouseleave', handleDragEnd);
+  
+    function updateSlider() {
+      const offset = -currentIndex * (100 / images.length);
+      imageSlider.style.transform = `translateX(${offset}%)`;
       updateIndicator();
-  
-      prevButton.addEventListener('click', function() {
-          currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
-          updateSlider();
-      });
-  
-      nextButton.addEventListener('click', function() {
-          currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
-          updateSlider();
-      });
-  
-      function updateSlider() {
-          images.forEach((img, index) => {
-              img.style.display = index === currentIndex ? 'block' : 'none'; 
-          });
-          updateIndicator();
-      }
-  
-      function updateIndicator() {
-          const boxes = indicatorContainer.querySelectorAll('.indicator-box');
-          boxes.forEach((box, index) => {
-              box.style.backgroundColor = index === currentIndex ? '#379600' : 'gray';
-          });
-      }
     }
+  
+    function updateIndicator() {
+      const boxes = indicatorContainer.querySelectorAll('.indicator-box');
+      boxes.forEach((box, index) => {
+        box.style.backgroundColor = index === currentIndex ? '#379600' : 'gray';
+      });
+    }
+  }
   });

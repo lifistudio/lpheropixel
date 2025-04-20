@@ -17,7 +17,6 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <style>
-        /* Add these modal animation styles */
         #portfolio-modal {
           opacity: 0;
           visibility: hidden;
@@ -77,8 +76,8 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 40px; /* Atur lebar tombol */
-            height: 40px; /* Atur tinggi tombol */
+            width: 40px; 
+            height: 40px; 
             cursor: pointer;
             border: none;
             border-radius: 5px;
@@ -92,18 +91,51 @@
 
         .indicator-container {
             display: flex; 
-            justify-content: center; /* Center the boxes */
-            margin-top: 10px; /* Space above the boxes */
+            justify-content: center; 
+            margin-top: 10px; 
         }
         
         .indicator-box {
-            width: 10px; /* Width of the box */
-            height: 10px; /* Height of the box */
-            margin: 0 5px; /* Space between boxes */
-            border-radius: 1px; /* Make the boxes circular */
-            background-color: gray; /* Default color */
-            transition: background-color 0.3s; /* Smooth transition for color change */
+            width: 10px; 
+            height: 10px; 
+            margin: 0 5px; 
+            border-radius: 1px; 
+            background-color: gray; 
+            transition: background-color 0.3s; 
         }
+
+        .image-slider {
+            display: flex;
+            transition: transform 0.3s ease; 
+          }
+          
+          .image-slider img {
+            width: 100%; 
+            flex-shrink: 0; 
+            user-select: none;
+            -webkit-user-drag: none; 
+            pointer-events: none;
+          }
+
+          .slider-container {
+            overflow: hidden;
+            touch-action: pan-y;
+            
+          }
+
+          .absolute.left-0 {
+            left: 0;
+            width: 10%;
+            height: 90%;
+            cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>') 12 12, w-res;
+          }
+          
+          .absolute.right-0 {
+            right: 0;
+            width: 10%;
+            height: 90%;
+            cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>') 12 12, e-res;
+          }
       </style>
 </head>
 
@@ -151,54 +183,26 @@
     </header>
 
     <main>
-        <!-- Home -->
-        <!-- <section id="home" class="relative bg-hero min-h-[500px] bg-center bg-cover backdrop-blur-md lg:min-h-[100vh] z-30 justify-content-center">
-            <div class="container h-[460px] flex flex-col gap-4 justify-center text-center items-center">
-                <h1 data-aos="fade-up" class="w-full md:w-[560px] lg:w-[960px] lg:text-5xl xl:text-7xl">Submit your
-                    minecraft projects-we'll bring to the marketplace.</h1>
-                <p data-aos="fade-up" data-aos-delay="300" class="font-Poppins text-base font- lg:text-2xl">Official publisher. Simple process.
-                    Fair collaboration.</p>
-                <a data-aos="fade-up" data-aos-delay="500" href="#formApp" class="my-4">
-                    <span
-                        class="bg-[#379600] font-Pixelify px-12 py-4 apply-button text-[20px] shadow-custom duration-300 md:py-4 text-2xl font-extralight md:text-xl hover:bg-[#3b6b1f]">Apply
-                        Now</span>
-                </a>
-            </div>
-            
-            <div class="absolute bottom-1 w-full flex justify-center">
-                <a href="#about">
-                  <div class="w-[60px]">
-                    <img src="assets/img/arrowdown.svg" alt="downicon" class="animate-bounce w-full">
-                  </div>
-                </a>
-            </div>
-            
-        </section>  -->
-
-        <section id="home" class="relative min-h-[500px] lg:min-h-[100vh] z-30 flex items-center justify-center">
+        <section id="home" class="relative min-h-[300px] lg:min-h-[100vh] z-30 flex items-center justify-center">
             <div class="carousel-container absolute inset-0 -z-10">
                 <div class="carousel-overlay"></div> 
                 <div class="mySlides active bg-cover bg-center w-full h-full" style="background-image: url('assets/img/background.png');"></div>
-                <div class="mySlides bg-cover bg-center w-full h-full" style="background-image: url('assets/img/bg7.jpg');"></div>
-                <div class="mySlides bg-cover bg-center w-full h-full" style="background-image: url('assets/img/bg8.jpg');"></div>
+                <div class=" mySlides bg-cover bg-center w-full h-full" style="background-image: url('assets/img/bg4.jpg');"></div>
+                <div class=" mySlides bg-cover bg-center w-full h-full" style="background-image: url('assets/img/bg6.jpg');"></div>
+
             </div>
             <div class="bg-black opacity-50 absolute w-full h-full"></div>
             
-            <div class="container flex flex-col gap-4 justify-center text-center items-center relative z-10">
-                <h1 data-aos="fade-up" class="w-full md:w-[560px] lg:w-[960px] lg:text-5xl xl:text-7xl">Submit your
+            <div class="container flex flex-col gap-2 md:gap-4 justify-center text-center items-center relative z-10 px-3 ">
+                <h1 data-aos="fade-up" class="w-full text-2xl md:w-[560px] lg:w-[960px] lg:text-5xl xl:text-7xl">Submit your
                     minecraft projects-we'll bring to the marketplace.</h1>
-                <p data-aos="fade-up" data-aos-delay="300" class="font-Poppins text-base font- lg:text-2xl">Official publisher. Simple process.
+                <p data-aos="fade-up" data-aos-delay="300" class="font-Poppins text-[10px] font- lg:text-2xl">Official publisher. Simple process.
                     Fair collaboration.</p>
-                <!-- <a data-aos="fade-up" data-aos-delay="500" href="#formApp" class="my-4">
-                    <span
-                        class="bg-[#379600] font-Pixelify px-12 py-4 apply-button text-[20px] shadow-custom duration-300 md:py-4 text-2xl font-extralight md:text-xl hover:bg-[#3b6b1f]">Apply
-                        Now</span>
-                </a> -->
                 <a href="index.html#formApp" class="nav-link my-8">
                     <div class="relative inline-block">
                         <div class="absolute inset-0 translate-x-2 translate-y-2 shadow-lg blur-md bg-[#379600] opacity-60 rounded-md z-0"></div>
         
-                        <span class="bg-[#379600] font-Pixelify px-12 py-4 apply-button text-[20px] shadow-custom duration-300 md:py-4 text-2xl font-extralight md:text-xl hover:bg-[#3b6b1f]">
+                        <span class="bg-[#379600] font-Pixelify px-6 py-2 md:px-12 apply-button text-base shadow-custom duration-300 md:py-4 font-extralight md:text-xl hover:bg-[#3b6b1f]">
                             Apply Now
                         </span>
                     </div>
@@ -207,7 +211,7 @@
         
             <div class="absolute bottom-1 w-full flex justify-center z-10">
                 <a href="#about">
-                    <div class="w-[60px]">
+                    <div class="w-10 md:w-[60px]">
                         <img src="assets/img/arrowdown.svg" alt="downicon" class="animate-bounce w-full">
                     </div>
                 </a>
@@ -356,9 +360,6 @@
                                     agree to my data being stored for communication purposes.
                                 </label>
                             </div>
-                            <!-- <button type="submit"
-                                class="bg-[#379600] hover:bg-[#3b6b1f] w-[70%] lg:w-[30%] px-8 py-4 apply-button text-base font-Pixelify shadow-custom duration-300 mx-auto my-8">Submit
-                                Project</button> -->
                                 <div class="relative w-[70%] lg:w-[30%] mx-auto my-8">
                                     <div class="absolute inset-0 translate-y-2 blur-xl bg-[#379600] opacity-50 rounded-md z-0"></div>
                                 
@@ -467,7 +468,7 @@
             
             slides[slideIndex-1].classList.add("active");
             
-            setTimeout(showSlides, 45000);
+            setTimeout(showSlides, 2000);
         }
 
       </script>
