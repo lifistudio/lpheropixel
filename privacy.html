@@ -44,41 +44,46 @@
 
 <body>
     <!-- Header -->
-    <header id="navbar" class="fixed w-full top-0 left-0 z-50">
-        <nav class="container flex items-center justify-between h-16 py-5 sm:h-20">
-            <div>
-                <a href="index.html">
-                    <img src="assets/img/logo.png" alt="" class="w-14">
-                </a>
-            </div>
+    <header id="navbar" class="fixed w-full top-0 left-0 z-50 overflow-hidden">
+      <nav class="container flex items-center justify-between h-16 py-5 sm:h-20">
+          <div>
+              <a href="index.html">
+                  <img src="assets/img/logo.png" alt="" class="w-14">
+              </a>
+          </div>
 
-            <div id="nav-menu"
-                class="absolute font-Pixelify top-0 left-[-100%] min-h-[100vh] w-full bg-black/90 backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit lg:w-auto lg:backdrop-blur-none lg:bg-transparent lg:h-20">
-                <ul class="flex flex-col items-center gap-8 lg:flex-row">
-                    <li>
-                        <a href="index.html#about" class="nav-link" onmouseover="this.style.color='#77ec34'" onmouseout="this.style.color='white'">About</a>
-                    </li>
-                    <li>
-                        <a href="index.html#portofolio" class="nav-link" onmouseover="this.style.color='#77ec34'" onmouseout="this.style.color='white'">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="index.html#how" class="nav-link" onmouseover="this.style.color='#77ec34'" onmouseout="this.style.color='white'">How it Works</a>
-                    </li>
-                    <li>
-                        <a href="index.html#formApp" class="nav-link">
-                            <span
-                                class="bg-[#379600] hover:bg-[#3b6b1f] px-12 py-4 apply-button text-[20px] shadow-custom duration-300 lg:py-3 lg:px-7 lg:text-base">Apply
-                                Now</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+          <div id="nav-menu"
+              class="absolute font-Pixelify top-0 left-[-100%] min-h-[100vh] w-full bg-black/90 backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit lg:w-auto lg:backdrop-blur-none lg:bg-transparent lg:h-20">
+              <ul class="flex flex-col items-center gap-8 lg:flex-row px-5">
+                  <li>
+                      <a href="index.html#about" class="nav-link" onmouseover="this.style.color='#77ec34'" onmouseout="this.style.color='white'">About</a>
+                  </li>
+                  <li>
+                      <a href="index.html#portofolio" class="nav-link" onmouseover="this.style.color='#77ec34'" onmouseout="this.style.color='white'">Portfolio</a>
+                  </li>
+                  <li>
+                      <a href="index.html#how" class="nav-link" onmouseover="this.style.color='#77ec34'" onmouseout="this.style.color='white'">How it Works</a>
+                  </li>
+                  <li>
+                      <a href="index.html#formApp" class="nav-link">
+                          <div class="relative inline-block">
+                              <div class="absolute inset-0 translate-x-2 translate-y-2 shadow-lg blur-xl bg-[#379600] opacity-60 rounded-md z-0"></div>
+              
+                              <span class="bg-[#379600] hover:bg-[#3b6b1f] px-12 py-4 apply-button text-[20px] duration-300 lg:py-3 lg:px-7 lg:text-base relative z-10">
+                                  Apply Now
+                              </span>
+                          </div>
+                      </a>
+                  </li>
+                  
+              </ul>
+          </div>
 
-            <div class="text-xl sm:text-3xl cursor-pointer z-50 lg:hidden">
-                <i class="ri-menu-line" id="hamburger"></i>
-            </div>
-        </nav>
-    </header>
+          <div class="text-xl sm:text-3xl cursor-pointer z-50 lg:hidden">
+              <i class="ri-menu-line" id="hamburger"></i>
+          </div>
+      </nav>
+  </header>
 
     <main>
         <!-- About -->
@@ -198,30 +203,30 @@
     </main>
 
     <footer class="bg-[#000000] pb-10 lg:py-10">
-        <div class="w-full flex flex-col items-center pt-3">
-            <p class="font-extralight text-[#A5A5A5]">Email: info@heropixel.games</p>
-            <div class="flex items-center justify-center gap-4 my-6">
-                <a href="https://x.com/Heropixel_Games" target="_blank">
-                    <i class="ri-twitter-x-line text-3xl lg:text-4xl"></i>
-                </a>
-                <a href="https://www.tiktok.com/@heropixelgames" target="_blank">
-                    <i class="ri-tiktok-fill text-4xl lg:text-5xl"></i>
-                </a>
-                <a href="https://discord.gg/uWnN56Z" target="_blank">
-                    <i class="ri-discord-fill text-4xl lg:text-5xl"></i>
-                </a>
-                <a href="https://www.instagram.com/heropixel_games/" target="_blank">
-                    <i class="ri-instagram-line text-4xl lg:text-5xl"></i>
-                </a>
-                <a href="https://www.planetminecraft.com/member/heropixel_games/" target="_blank">
-                    <img src="assets/img/iconminecraft.jpg" alt="icon-minecraft" class="w-12">
-                </a>
-            </div>
-            <div class="border-b-[0.5px] w-full border-[#484848] mt-2"></div>
-            <p class="text-[10px] lg:text-base font-extralight text-[#A5A5A5] text-center mt-4">Copyright ©
-                HeroPixels.org 2025. <span class="text-[#379600]"><a href="privacy.html" target="_blank">Privacy Policy.</a> <a href="imprint.html" target="_blank">Imprint.</a></span></p>
-        </div>
-    </footer>
+      <div class="w-full flex flex-col items-center pt-3">
+          <p class="font-extralight text-[#A5A5A5]">Email: info@heropixel.games</p>
+          <div class="flex items-center justify-center gap-4 my-6">
+              <a href="https://x.com/Heropixel_Games" target="_blank">
+                  <i class="ri-twitter-x-line text-3xl lg:text-4xl"></i>
+              </a>
+              <a href="https://www.tiktok.com/@heropixelgames" target="_blank">
+                  <i class="ri-tiktok-fill text-4xl lg:text-5xl"></i>
+              </a>
+              <a href="https://discord.gg/uWnN56Z" target="_blank">
+                  <i class="ri-discord-fill text-4xl lg:text-5xl"></i>
+              </a>
+              <a href="https://www.instagram.com/heropixel_games/" target="_blank">
+                  <i class="ri-instagram-line text-4xl lg:text-5xl"></i>
+              </a>
+              <a href="https://youtube.com/@heropixelgames" target="_blank">
+                  <i class="ri-youtube-fill text-4xl lg:text-5xl"></i>
+              </a>
+          </div>
+          <div class="border-b-[0.5px] w-full border-[#484848] mt-2"></div>
+          <p class="text-[10px] lg:text-base font-extralight text-[#A5A5A5] text-center mt-4">Copyright ©
+              HeroPixels.org 2025. <span class="text-[#379600]"><a href="privacy.html" target="_blank">Privacy Policy.</a> <a href="https://heropixel.games/imprint.html" target="_blank">Imprint.</a></span></p>
+      </div>
+  </footer>
 
     <!-- Main Js -->
     <script src="assets/js/main.js"></script>
