@@ -33,7 +33,7 @@ const portfolioItems = [
   {
     id: 1,
     title: "4Bit Craft",
-    date: "July 2019",
+    date: "14 February 2023",
     image: [
       "assets/img/4bit_craft.jpeg",
       "assets/img/4bitcraft/4Bit_Craft_MarketingScreenshot_0.jpg",
@@ -46,14 +46,14 @@ const portfolioItems = [
       "assets/img/4bitcraft/4Bit_Craft_MarketingScreenshot_7.jpg",
     ],
     description:
-      "Turn your Minecraft into a super cute game! Everything seems tiny: every block, every mob, every tree.<br><br>- Super cute 4x4 pack<br>- 4x4 blocks, items, mobs and more<br>- Faithful to vanilla textures<br>- 1.20 Resource Pack",
+      "Turn your Minecraft into a super cute game! Everything seems tiny: every block, every mob, every tree.<br><br>+ Super cute 4x4 pack<br>+ 4x4 blocks, items, mobs and more<br>+ Faithful to vanilla textures<br>+ 1.20 Resource Pack",
     builders:
       "affe481 - koin1 - BigKingHD - Chonike - FlyingZera - hackerpotter - M1ller_ - sebsy - VyseHD - WoIstMeineSocke - Youseles",
   },
   {
     id: 2,
     title: "More Allays",
-    date: "July 2019",
+    date: "24 January 2023",
     image: [
           "assets/img/more_allays.jpeg",
           "assets/img/moreallays/More_Allays_MarketingScreenshot_0.jpg",
@@ -63,13 +63,13 @@ const portfolioItems = [
           "assets/img/moreallays/More_Allays_MarketingScreenshot_4.jpg",
     ],
     description:
-      "+ 16 cute Allays added!<br> <br>+ Allay Dungeons &amp; Temples<br><br>+ 10 Allay skins included<br><br> ++ Multiplayer &amp; Singleplayer friendly<br><br><br>Start your Minecraft survival adventure! Many new Allays are waiting for you: Enderman Allay, Axolotl Allay, Warden Allay and many more! Free them from the dungeons and temples. Tame them and they will become your loyal pets!",
+      "16 cute Allays added! +<br> <br> Allay Dungeons &amp; Temples +<br><br>10 Allay skins included +<br><br>Multiplayer &amp; Singleplayer friendly +<br><br><br>Start your Minecraft survival adventure! Many new Allays are waiting for you: Enderman Allay, Axolotl Allay, Warden Allay and many more! Free them from the dungeons and temples. Tame them and they will become your loyal pets!",
     
   },
   {
     id: 3,
     title: "Giant TNT",
-    date: "17 February 2025 ",
+    date: "17 February 2025",
     image: [
       "assets/img/giant_tnt.jpg",
       "assets/img/gianttnt/GIANT_TNT_MarketingScreenshot_0.jpg",
@@ -83,13 +83,13 @@ const portfolioItems = [
       "assets/img/gianttnt/GIANT_TNT_MarketingScreenshot_8.jpg",
       "assets/img/gianttnt/GIANT_TNT_MarketingScreenshot_9.jpg",
     ],
-    description: "Description: Do you need the most extreme? These TNTs not only destroy bases, but also entire villages and large cities. Have fun with them! <br><br>Over 40 different Giant TNTs Maximum destruction and explosions Tornado, meteor, 5,000x and more TNTs!<br><br>++ Use it on your world! <br>++ Multiplayer friendly!<br>",
+    description: "Do you need the most extreme? These TNTs not only destroy bases, but also entire villages and large cities. Have fun with them! <br><br>+ Over 40 different Giant TNTs Maximum destruction and explosions Tornado, meteor, 5,000x and more TNTs!<br><br>++ Use it on your world! <br>++ Multiplayer friendly!<br>",
     
   },
   {
     id: 4,
     title: "Pastel Paradise",
-    date: "July 2019",
+    date: "10 September 2024",
     image: [
       "assets/img/pastelparadise.jpg",
       "assets/img/pastelparadise/PastelParadise_MarketingScreenshot_0.jpg",
@@ -103,13 +103,13 @@ const portfolioItems = [
       "assets/img/pastelparadise/PastelParadise_MarketingScreenshot_8.jpg",
       "assets/img/pastelparadise/PastelParadise_MarketingScreenshot_9.jpg",
     ],
-    description: "Immerse yourself in the soothing beauty of pastel textures and colors.<br><br>+ 1.21 Tricky Trials textures update<br>+ Everything retextured in pastel style<br>+ New mob, animal and boss models<br>+ Texture block variations<br>+ Animated ores<br>+ Attention to detail<br><br>++ Use this texture pack in your world!<br>++ Watch the trailer! ++",
+    description: "Immerse yourself in the soothing beauty of pastel textures and colors.<br><br>+ 1.21 Tricky Trials textures update<br>+ Everything retextured in pastel style<br>+ New mob, animal and boss models<br>+ Texture block variations<br>+ Animated ores<br>+ Attention to detail",
     
   },
   {
     id: 5,
     title: "Zombie Bunker",
-    date: "July 2019",
+    date: "19 July 2022",
     image: [
       "assets/img/zombie_bunker.jpg",
       "assets/img/zombiebunker/Zombie_Bunker_MarketingScreenshot_0.jpg",
@@ -124,7 +124,7 @@ const portfolioItems = [
   {
     id: 6,
     title: "More Creepers",
-    date: "July 2019",
+    date: "8 October 2024",
     image: [
       "assets/img/more_creepers.jpg",
       "assets/img/morecreeper/More_Creepers_MarketingScreenshot_0.jpg",
@@ -180,10 +180,10 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="image-slider aspect-video">
               ${images}
             </div>
-            <button class="prev-button absolute left-5 top-1/2 transform -translate-y-1/2 bg-[#379600] text-white p-2 rounded-l-md hover:bg-[#3b6b1f] transition-all duration-300">
+            <button class="prev-button absolute left-5 top-1/2 transform -translate-y-1/2 bg-[#379600] text-white p-2 rounded-l-md hover:bg-[#3b6b1f] transition-all duration-300 z-20">
               <i class="ri-arrow-left-line"></i>
             </button>
-            <button class="next-button absolute right-5 top-1/2 transform -translate-y-1/2 bg-[#379600] text-white p-2 rounded-r-md hover:bg-[#3b6b1f] transition-all duration-300">
+            <button class="next-button absolute right-5 top-1/2 transform -translate-y-1/2 bg-[#379600] text-white p-2 rounded-r-md hover:bg-[#3b6b1f] transition-all duration-300 z-20">
               <i class="ri-arrow-right-line"></i>
             </button>
             <div class="indicator-container flex justify-center mt-2"></div>
