@@ -63,7 +63,7 @@ const portfolioItems = [
           "assets/img/moreallays/More_Allays_MarketingScreenshot_4.jpg",
     ],
     description:
-      "16 cute Allays added! +<br> <br> Allay Dungeons &amp; Temples +<br><br>10 Allay skins included +<br><br>Multiplayer &amp; Singleplayer friendly +<br><br><br>Start your Minecraft survival adventure! Many new Allays are waiting for you: Enderman Allay, Axolotl Allay, Warden Allay and many more! Free them from the dungeons and temples. Tame them and they will become your loyal pets!",
+      "Start your Minecraft survival adventure! Many new Allays are waiting for you: Enderman Allay, Axolotl Allay, Warden Allay and many more! Free them from the dungeons and temples. Tame them and they will become your loyal pets!<br><br>+ 16 cute Allays added!<br> + Allay Dungeons &amp; Temples<br>+ 10 Allay skins included<br>+ Multiplayer &amp; Singleplayer friendly",
     
   },
   {
@@ -83,7 +83,7 @@ const portfolioItems = [
       "assets/img/gianttnt/GIANT_TNT_MarketingScreenshot_8.jpg",
       "assets/img/gianttnt/GIANT_TNT_MarketingScreenshot_9.jpg",
     ],
-    description: "Do you need the most extreme? These TNTs not only destroy bases, but also entire villages and large cities. Have fun with them! <br><br>+ Over 40 different Giant TNTs Maximum destruction and explosions Tornado, meteor, 5,000x and more TNTs!<br><br>++ Use it on your world! <br>++ Multiplayer friendly!<br>",
+    description: "Do you need the most extreme? These TNTs not only destroy bases, but also entire villages and large cities. Have fun with them! <br><br>+ Over 40 different Giant TNTs<br>+ Maximum destruction and explosions<br>+ Tornado, meteor, 5,000x and more TNTs!<br><br>++ Use it on your world! <br>++ Multiplayer friendly!<br>",
     
   },
   {
@@ -103,7 +103,7 @@ const portfolioItems = [
       "assets/img/pastelparadise/PastelParadise_MarketingScreenshot_8.jpg",
       "assets/img/pastelparadise/PastelParadise_MarketingScreenshot_9.jpg",
     ],
-    description: "Immerse yourself in the soothing beauty of pastel textures and colors.<br><br>+ 1.21 Tricky Trials textures update<br>+ Everything retextured in pastel style<br>+ New mob, animal and boss models<br>+ Texture block variations<br>+ Animated ores<br>+ Attention to detail<br><br>++Use this texture pack in your world!",
+    description: "Immerse yourself in the soothing beauty of pastel textures and colors.<br><br>+ 1.21 Tricky Trials textures update<br>+ Everything retextured in pastel style<br>+ New mob, animal and boss models<br>+ Texture block variations<br>+ Animated ores<br>+ Attention to detail<br><br>++ Use this texture pack in your world!",
     
   },
   {
