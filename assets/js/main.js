@@ -103,7 +103,7 @@ const portfolioItems = [
       "assets/img/pastelparadise/PastelParadise_MarketingScreenshot_8.jpg",
       "assets/img/pastelparadise/PastelParadise_MarketingScreenshot_9.jpg",
     ],
-    description: "Immerse yourself in the soothing beauty of pastel textures and colors.<br><br>+ 1.21 Tricky Trials textures update<br>+ Everything retextured in pastel style<br>+ New mob, animal and boss models<br>+ Texture block variations<br>+ Animated ores<br>+ Attention to detail",
+    description: "Immerse yourself in the soothing beauty of pastel textures and colors.<br><br>+ 1.21 Tricky Trials textures update<br>+ Everything retextured in pastel style<br>+ New mob, animal and boss models<br>+ Texture block variations<br>+ Animated ores<br>+ Attention to detail<br><br>++Use this texture pack in your world!",
     
   },
   {
